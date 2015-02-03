@@ -1,0 +1,1962 @@
+
+DiceLock 9.0.0.1
+
+ TEST COMPONENTS:
+ ----------------
+ DiceLock:           DiceLockXTSDigested class
+                     Operating based on storage sector size length
+ Operation Mode:     XTS_Mode class
+ Block Cipher:       Camellia256 class
+ Hash algorithms:     0 - Sha1 class
+                      1 - Sha224 class
+                      2 - Sha256 class
+                      3 - Sha384 class
+                      4 - Sha512 class
+                      5 - Sha512_224 class
+                      6 - Sha512_256 class
+                      7 - Ripemd128 class
+                      8 - Ripemd160 class
+                      9 - Ripemd256 class
+                     10 - Ripemd320 class
+                     11 - MD2 class
+                     12 - MD4 class
+                     13 - MD5 class
+ Key Modifier:       IncreaseKeyModifier_6_0_0_1 class
+ Random tests:       RandomTestSuite class
+                     FrequencyTest class
+                     BlockFrequencyTest class
+                     CumulativeSumForwardTest class
+                     LongestRunOfOnesTest class
+                     RunsTest class
+ Random alpha:       0.001
+
+ VECTOR TEST: Test vector 5 - Symmetric key all byte value 0xXX and plaintext all byte value 0xYY
+
+
+##### INDIVIDUAL TESTS #####
+
+Number tests: 128
+
+
+Test: 0
+Hash algorithm:       0
+Sector size in bytes: 512
+Data unit:   0
+Start block: 1
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Plaintext:                ffffffffffffffffffffffffffffffff
+Ciphertext:               037797abc450cd95901558ea2db3dac5b2d100381390b02d1654c2b4b617bdf141a02f16
+Reciphers for ciphertext: 0
+Decipheredtext:           ffffffffffffffffffffffffffffffff
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 1
+Hash algorithm:       9
+Sector size in bytes: 512
+Data unit:   1
+Start block: 3
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            01010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
+Plaintext:                fefefefefefefefefefefefefefefefe
+Ciphertext:               04cb50762193443b70e605d8e432a7d56c2f8a6370d0ca6e4a899f0296f8b984d52404403f0140d6613300d34ab2794f
+Reciphers for ciphertext: 0
+Decipheredtext:           fefefefefefefefefefefefefefefefe
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 2
+Hash algorithm:       1
+Sector size in bytes: 512
+Data unit:   2
+Start block: 5
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            02020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202
+Plaintext:                fdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfd
+Ciphertext:               db5065ad5273e05e12a7a2af06c9a2273dedc2c059bce879b2b0de4420786ededde1bcd24dc5473d2f2ad2f3
+Reciphers for ciphertext: 0
+Decipheredtext:           fdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfd
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 3
+Hash algorithm:       11
+Sector size in bytes: 512
+Data unit:   3
+Start block: 7
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            03030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303
+Plaintext:                fcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfc
+Ciphertext:               edf51f3eb2dbf1d409a7eb8738dadc07a7891e476d3c1a664624a3345e4813f0
+Reciphers for ciphertext: 0
+Decipheredtext:           fcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfc
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 4
+Hash algorithm:       7
+Sector size in bytes: 512
+Data unit:   4
+Start block: 9
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            04040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404
+Plaintext:                fbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfb
+Ciphertext:               3cabff4db84618561b31f137a48c3fc973f4324c045e7118cc53a02d21f00d67
+Reciphers for ciphertext: 0
+Decipheredtext:           fbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 5
+Hash algorithm:       12
+Sector size in bytes: 512
+Data unit:   5
+Start block: 11
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            05050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505
+Plaintext:                fafafafafafafafafafafafafafafafa
+Ciphertext:               7c62e72beeeb029de8d16e68b06ebaee1334d2d9a3b5deba51d9bd85da6b6e33
+Reciphers for ciphertext: 0
+Decipheredtext:           fafafafafafafafafafafafafafafafa
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 6
+Hash algorithm:       6
+Sector size in bytes: 512
+Data unit:   6
+Start block: 13
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            06060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606
+Plaintext:                f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9
+Ciphertext:               0d6492f523654e751b68a6f88fa1f5658af5552339b4b8b76eaf499c998b36e057505fda345a9ee149d0dcba88f9e552
+Reciphers for ciphertext: 0
+Decipheredtext:           f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 7
+Hash algorithm:       4
+Sector size in bytes: 512
+Data unit:   7
+Start block: 15
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            07070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707
+Plaintext:                f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8
+Ciphertext:               f56116d859aa479e972cde42b17c9d97aab417626670fe6cd1c5dd1614a213a6efacf1aafd945f65b259225cbe0d7bb764a220c631c77e7bcb73cfbe998d2184803eab13dfba83df12a842d108c3a86f
+Reciphers for ciphertext: 0
+Decipheredtext:           f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 8
+Hash algorithm:       11
+Sector size in bytes: 512
+Data unit:   8
+Start block: 17
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            08080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808080808
+Plaintext:                f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7
+Ciphertext:               dc3f9bb8c2a79a83b339f96c91d8fa1aebbd0385f2fe3d23c0ce89c6a8f6f1ee
+Reciphers for ciphertext: 0
+Decipheredtext:           f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 9
+Hash algorithm:       11
+Sector size in bytes: 512
+Data unit:   9
+Start block: 19
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            09090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909090909
+Plaintext:                f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6
+Ciphertext:               cf6a609beed944f241111a17c70cc9777e9fb3b680773a6fdf5255fd5b4b4f75
+Reciphers for ciphertext: 0
+Decipheredtext:           f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 10
+Hash algorithm:       10
+Sector size in bytes: 1024
+Data unit:   10
+Start block: 21
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a
+Plaintext:                f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5
+Ciphertext:               d8cbc0ea5c163f434b365b1d80a6dc241e75ca464c513d90b74b2b52d9f170adb2aec7c22eba1c2a318653ca88c328cf437639a6fbaf17a8
+Reciphers for ciphertext: 0
+Decipheredtext:           f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 11
+Hash algorithm:       12
+Sector size in bytes: 1024
+Data unit:   11
+Start block: 23
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b
+Plaintext:                f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4
+Ciphertext:               44dd30285b26a4963df43e3efa20fbbbc0dfdfb23f76ff3e0ac2ea5276093ea3
+Reciphers for ciphertext: 0
+Decipheredtext:           f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 12
+Hash algorithm:       6
+Sector size in bytes: 1024
+Data unit:   12
+Start block: 25
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c
+Plaintext:                f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3
+Ciphertext:               a152125657085e48e091e2b1a05b54babb1b567b404f44f0e2d2c68da79d166229bbec9c996ef50ffd724a746b4344ac
+Reciphers for ciphertext: 0
+Decipheredtext:           f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 13
+Hash algorithm:       5
+Sector size in bytes: 1024
+Data unit:   13
+Start block: 27
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d
+Plaintext:                f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2
+Ciphertext:               404a0f8b09a769e7b36171d924fe2f19adac2a64401ec003a37e920125b1ec1cd2bbb5e9c4e4c9a94c790537
+Reciphers for ciphertext: 0
+Decipheredtext:           f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 14
+Hash algorithm:       2
+Sector size in bytes: 1024
+Data unit:   14
+Start block: 29
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e
+Plaintext:                f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1
+Ciphertext:               703d809648ab55d25e811d617e11cf0c6fa83cb8905261a9ab3ddb70f5427c416fde4821729822455adc0d0bfe8d36ea
+Reciphers for ciphertext: 0
+Decipheredtext:           f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 15
+Hash algorithm:       9
+Sector size in bytes: 1024
+Data unit:   15
+Start block: 31
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f
+Plaintext:                f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0
+Ciphertext:               faf17ef9d7bf87129b46f1c4454320886573157a3ebc3543f8cf04141e65701f6799018a0bd42fbd35058c4a16dffd9d
+Reciphers for ciphertext: 0
+Decipheredtext:           f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 16
+Hash algorithm:       6
+Sector size in bytes: 1024
+Data unit:   16
+Start block: 33
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            10101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010
+Plaintext:                efefefefefefefefefefefefefefefef
+Ciphertext:               3486aa82e047c4e382b55e9591fe4cc64053751927a87757763be09613fd01bd7546f24f5f437f0a86b8f041253942c7
+Reciphers for ciphertext: 0
+Decipheredtext:           efefefefefefefefefefefefefefefef
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 17
+Hash algorithm:       3
+Sector size in bytes: 1024
+Data unit:   17
+Start block: 35
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111
+Plaintext:                eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Ciphertext:               c46881dec1d9977c0a5df5bd8873cbf193753762fd9e21e194b32c2252d17ef1fc40d95d662de983dcedfbe5ac2f97420f45d4964e8c77c23d2dac3c89f8fc57
+Reciphers for ciphertext: 0
+Decipheredtext:           eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 18
+Hash algorithm:       1
+Sector size in bytes: 1024
+Data unit:   18
+Start block: 37
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            12121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212
+Plaintext:                edededededededededededededededed
+Ciphertext:               fcfb8e4b93d850e8e36a47932a939ae60955a7af9905ef70df472977347c8a71479eabfc0cf0e12c7a78428d
+Reciphers for ciphertext: 0
+Decipheredtext:           edededededededededededededededed
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 19
+Hash algorithm:       12
+Sector size in bytes: 1024
+Data unit:   19
+Start block: 39
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            13131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313
+Plaintext:                ecececececececececececececececec
+Ciphertext:               82364134952363a98afd4749ae3b8a117448145874ec2fd1e7d43a23f64d5ae9
+Reciphers for ciphertext: 0
+Decipheredtext:           ecececececececececececececececec
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 20
+Hash algorithm:       6
+Sector size in bytes: 1536
+Data unit:   20
+Start block: 41
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            14141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414
+Plaintext:                ebebebebebebebebebebebebebebebeb
+Ciphertext:               1120c6c5784b271aec250e48aaa60021208906ed24c3334428a78a4fa295785f7b333c5f78f41a3ad04fabd7934e4fa0
+Reciphers for ciphertext: 0
+Decipheredtext:           ebebebebebebebebebebebebebebebeb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 21
+Hash algorithm:       2
+Sector size in bytes: 1536
+Data unit:   21
+Start block: 43
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            15151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515
+Plaintext:                eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea
+Ciphertext:               e7a0785ebc3868d04fbc0a5480185595240cf62477ed56c84362dca7691ab69e1cad105380eff16b81f769ea894028e5
+Reciphers for ciphertext: 0
+Decipheredtext:           eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 22
+Hash algorithm:       0
+Sector size in bytes: 1536
+Data unit:   22
+Start block: 45
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            16161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616
+Plaintext:                e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9
+Ciphertext:               6952dc1c91233d8d71e574cb3a740cfc1a9b9257bc1e7279768938bdc3fc36d64d2ba449
+Reciphers for ciphertext: 0
+Decipheredtext:           e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 23
+Hash algorithm:       7
+Sector size in bytes: 1536
+Data unit:   23
+Start block: 47
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            17171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717
+Plaintext:                e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8
+Ciphertext:               3a9021cb2a7fd47d6b942066e8293131a93377a1e1034edc52541f92b858cb40
+Reciphers for ciphertext: 0
+Decipheredtext:           e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 24
+Hash algorithm:       5
+Sector size in bytes: 1536
+Data unit:   24
+Start block: 49
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            18181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818181818
+Plaintext:                e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7
+Ciphertext:               8cf4308c79e58aa4f97db2cb8f45df49828ba0f03615d36cf52b2dd7946e6904772eb3124d390933f82c167a
+Reciphers for ciphertext: 0
+Decipheredtext:           e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 25
+Hash algorithm:       0
+Sector size in bytes: 1536
+Data unit:   25
+Start block: 51
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            19191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919191919
+Plaintext:                e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6
+Ciphertext:               97f1c018913df90ad7132a9b0dbd783c81f2b410253f779fe837516541d86ad1915b9cf7
+Reciphers for ciphertext: 0
+Decipheredtext:           e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 26
+Hash algorithm:       9
+Sector size in bytes: 1536
+Data unit:   26
+Start block: 53
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a
+Plaintext:                e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5
+Ciphertext:               1f98c343ace9aee195c79905229735cb50ce28220810fecd4779ec80b51bdc00f87b94b94d22af1d7ab96e31a16ee962
+Reciphers for ciphertext: 0
+Decipheredtext:           e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 27
+Hash algorithm:       11
+Sector size in bytes: 1536
+Data unit:   27
+Start block: 55
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b
+Plaintext:                e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4
+Ciphertext:               a903c65eced0e3c3a94ced5cc7d21cf7ebd0be55f22515b1d05ade52e7d77912
+Reciphers for ciphertext: 0
+Decipheredtext:           e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 28
+Hash algorithm:       6
+Sector size in bytes: 1536
+Data unit:   28
+Start block: 57
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c
+Plaintext:                e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3
+Ciphertext:               b8e4a357bacaab694d0bc3830b3d8ada61afef51cc234c7f4029fcebba65c9e659b40ab56561c627b6e3ac39c9e4f286
+Reciphers for ciphertext: 0
+Decipheredtext:           e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 29
+Hash algorithm:       12
+Sector size in bytes: 1536
+Data unit:   29
+Start block: 59
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d
+Plaintext:                e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2
+Ciphertext:               e063f3f1972ec1ecd04f439b27deb250e0fdecc72b47b432f2123d356f8c8244
+Reciphers for ciphertext: 0
+Decipheredtext:           e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 30
+Hash algorithm:       1
+Sector size in bytes: 2048
+Data unit:   30
+Start block: 61
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e
+Plaintext:                e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1
+Ciphertext:               aacde95a163eaa2843733564067ca9c1a38df283ed038e5b8c3e29c42390f3002ed25ef138e637fa716bfe01
+Reciphers for ciphertext: 0
+Decipheredtext:           e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 31
+Hash algorithm:       1
+Sector size in bytes: 2048
+Data unit:   31
+Start block: 63
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f
+Plaintext:                e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0
+Ciphertext:               1e2508d0611cde6f42a6e098a6f8ded82d666849a3f9bb40e4f47c8ef61707078e4499d096b140f4265f9b2f
+Reciphers for ciphertext: 0
+Decipheredtext:           e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 32
+Hash algorithm:       4
+Sector size in bytes: 2048
+Data unit:   32
+Start block: 65
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020
+Plaintext:                dfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf
+Ciphertext:               7f220046f3b6c459925349803df6e9d5020e244921f57cc0928895e48ac4a8dd4ae1f092c86945fab5d4cab794ee1cb777bf9f53285c2de46483e0cb19aae3ce22f9cecc7daa0e7e2d3bca9b77ff8e35
+Reciphers for ciphertext: 0
+Decipheredtext:           dfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 33
+Hash algorithm:       0
+Sector size in bytes: 2048
+Data unit:   33
+Start block: 67
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            21212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121212121
+Plaintext:                dededededededededededededededede
+Ciphertext:               b085ec4f605820ebd609e7a16f5547c96438ec8e95a96946d6d43f9cc34923786d2789ff
+Reciphers for ciphertext: 0
+Decipheredtext:           dededededededededededededededede
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 34
+Hash algorithm:       0
+Sector size in bytes: 2048
+Data unit:   34
+Start block: 69
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+Plaintext:                dddddddddddddddddddddddddddddddd
+Ciphertext:               7d607a97511534a7db184fa575867109ec343598d235d1e863d90722d53e4b53b47fdc20
+Reciphers for ciphertext: 0
+Decipheredtext:           dddddddddddddddddddddddddddddddd
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 35
+Hash algorithm:       6
+Sector size in bytes: 2048
+Data unit:   35
+Start block: 71
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            23232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323
+Plaintext:                dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc
+Ciphertext:               ffc16dbe0bf5afa5ac8486c644b15d1ba818bda61e1de15b1dc8d090ef480f16852996d26dbc97ae00f6f38687bd71ff
+Reciphers for ciphertext: 1
+Decipheredtext:           dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 36
+Hash algorithm:       1
+Sector size in bytes: 2048
+Data unit:   36
+Start block: 73
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            24242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424
+Plaintext:                dbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdb
+Ciphertext:               4e0e3511026cf28757ea74e392aab51f379f551b1a0068cfb4205f5bb0049681713ffabb32de554eb8221912
+Reciphers for ciphertext: 0
+Decipheredtext:           dbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 37
+Hash algorithm:       0
+Sector size in bytes: 2048
+Data unit:   37
+Start block: 75
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            25252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525
+Plaintext:                dadadadadadadadadadadadadadadada
+Ciphertext:               8db63179a85dcf33267ab051fb6723d531866bc1a3571565b2c0f3d530ce0dfdab5debe1
+Reciphers for ciphertext: 0
+Decipheredtext:           dadadadadadadadadadadadadadadada
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 38
+Hash algorithm:       13
+Sector size in bytes: 2048
+Data unit:   38
+Start block: 77
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            26262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626
+Plaintext:                d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9
+Ciphertext:               9049afc231bfbf48509eb9286608b0192eafedd56c652d63283bca9e648701ac
+Reciphers for ciphertext: 0
+Decipheredtext:           d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 39
+Hash algorithm:       4
+Sector size in bytes: 2048
+Data unit:   39
+Start block: 79
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            27272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727
+Plaintext:                d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8
+Ciphertext:               0fc7449b34f04180c7d267b0d6dd9b0b50bccd606258db51d07f6fd70d88aff17b6962e6ef7d03821d5b294a7fab4fa3a681795c0b06d75a1ccc641ff3f09e7ca04480bd4cb4e0610fa80817e6b1102a
+Reciphers for ciphertext: 0
+Decipheredtext:           d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 40
+Hash algorithm:       0
+Sector size in bytes: 2560
+Data unit:   40
+Start block: 81
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            28282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828282828
+Plaintext:                d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7
+Ciphertext:               2ea763aff38c646c8241e8e2e2dd38164a741714b2a8e03ab58c8f2909cbe42f0534cb3a
+Reciphers for ciphertext: 0
+Decipheredtext:           d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 41
+Hash algorithm:       3
+Sector size in bytes: 2560
+Data unit:   41
+Start block: 83
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            29292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929292929
+Plaintext:                d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6
+Ciphertext:               961e58e14807fd302a8aa19988509fbd6cc3cb5bc23c5cd1e900d2cd760517c52654cd5770f3dd63a777df2ca32736245a82d4101ea405b52d36138c02a3bdf5
+Reciphers for ciphertext: 0
+Decipheredtext:           d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 42
+Hash algorithm:       5
+Sector size in bytes: 2560
+Data unit:   42
+Start block: 85
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a
+Plaintext:                d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5
+Ciphertext:               9f4635fe8ce350bae2c6c57d02ac307cac4737d6e6d430216147be1dca3228281b01a5df15103769abaa60d6
+Reciphers for ciphertext: 0
+Decipheredtext:           d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 43
+Hash algorithm:       6
+Sector size in bytes: 2560
+Data unit:   43
+Start block: 87
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+Plaintext:                d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4
+Ciphertext:               dd8e7da55a429a9f5ffde1e290a13d18d7ac8f9c00a9da8c887fcc018cca5b2171920ac6078e884360ca0a1aa1228c19
+Reciphers for ciphertext: 0
+Decipheredtext:           d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 44
+Hash algorithm:       5
+Sector size in bytes: 2560
+Data unit:   44
+Start block: 89
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c
+Plaintext:                d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3
+Ciphertext:               e9bf54514122ff7d9468a332e757b0918e211ff91afaa2a038ec97df780acc7a5c6574cd6379bba81f5b16fc
+Reciphers for ciphertext: 0
+Decipheredtext:           d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 45
+Hash algorithm:       0
+Sector size in bytes: 2560
+Data unit:   45
+Start block: 91
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d
+Plaintext:                d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2
+Ciphertext:               0406d3971c547943470dd704607bb8af8f1286937f048c1ce9a2c4160bf85d8dc4226ef4
+Reciphers for ciphertext: 0
+Decipheredtext:           d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 46
+Hash algorithm:       6
+Sector size in bytes: 2560
+Data unit:   46
+Start block: 93
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e
+Plaintext:                d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1
+Ciphertext:               9e2bea26cc049a02e76551cfe4c5fba6746a1e3abce7aef77a2b08ad016cb68bf46512d03d90439947c422c5aba7f27e
+Reciphers for ciphertext: 0
+Decipheredtext:           d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 47
+Hash algorithm:       2
+Sector size in bytes: 2560
+Data unit:   47
+Start block: 95
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f
+Plaintext:                d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0
+Ciphertext:               e112ae6f28e7978161b5baffb0619b5d2f61d6d703aedb0aac854dce36f2f163d6231c593ad6c550ed0d58ab15b2622c
+Reciphers for ciphertext: 0
+Decipheredtext:           d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 48
+Hash algorithm:       11
+Sector size in bytes: 2560
+Data unit:   48
+Start block: 97
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            30303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030
+Plaintext:                cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf
+Ciphertext:               1befe4a892b8746e40fed00b14c2c4c7aca4126e9333ee8ff1c3d3b1b23425ee
+Reciphers for ciphertext: 0
+Decipheredtext:           cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 49
+Hash algorithm:       7
+Sector size in bytes: 2560
+Data unit:   49
+Start block: 99
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            31313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131313131
+Plaintext:                cececececececececececececececece
+Ciphertext:               8362d0162cfd04be54321573917656aebd7b3cc18807a3a517a719ccd67d92f5
+Reciphers for ciphertext: 0
+Decipheredtext:           cececececececececececececececece
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 50
+Hash algorithm:       4
+Sector size in bytes: 3072
+Data unit:   50
+Start block: 101
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            32323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232323232
+Plaintext:                cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd
+Ciphertext:               410c5065d3a1399f374f3a87ed825da8eda376bd0ef08c00b9f9c6faef564298b2e2de067b5d93944fa6860f153231fe962084ea5b24397a246f65db42db26590f9b26bd9349acd87bd5370a05be4559
+Reciphers for ciphertext: 0
+Decipheredtext:           cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 51
+Hash algorithm:       2
+Sector size in bytes: 3072
+Data unit:   51
+Start block: 103
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333
+Plaintext:                cccccccccccccccccccccccccccccccc
+Ciphertext:               64b5520bf775299ce8b4dfce958c8c928d6e9351f133a7399c2383e23aa4eade3e6870e83ba68fc2994d064e0a5f2616
+Reciphers for ciphertext: 0
+Decipheredtext:           cccccccccccccccccccccccccccccccc
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 52
+Hash algorithm:       4
+Sector size in bytes: 3072
+Data unit:   52
+Start block: 105
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            34343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434
+Plaintext:                cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+Ciphertext:               3d961187f33f16ce60bd14b90b865ea3a68f818a12b82100cfdade1aa4f1ec92fdf77b3f00322f222398c47475f4d8428f1afe7fadbfd06803839c7742d88150df50b992f5e552c27df7a23743628b31
+Reciphers for ciphertext: 0
+Decipheredtext:           cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 53
+Hash algorithm:       9
+Sector size in bytes: 3072
+Data unit:   53
+Start block: 107
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            35353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535
+Plaintext:                cacacacacacacacacacacacacacacaca
+Ciphertext:               c756d054900c5605058b51600e7d02d4c1b356cbf0e1d43194e47f746309245ddb47df7c21f4374b83b8cc12be18d320
+Reciphers for ciphertext: 0
+Decipheredtext:           cacacacacacacacacacacacacacacaca
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 54
+Hash algorithm:       12
+Sector size in bytes: 3072
+Data unit:   54
+Start block: 109
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            36363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636
+Plaintext:                c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9
+Ciphertext:               8230e5d009a120659881535c3bd810caf7d821611bbbe28a0c3e1ba5f561a046
+Reciphers for ciphertext: 0
+Decipheredtext:           c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 55
+Hash algorithm:       7
+Sector size in bytes: 3072
+Data unit:   55
+Start block: 111
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            37373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737
+Plaintext:                c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8
+Ciphertext:               34444ccffa0a226a402a56b2a48c1675cd476c162a0173670422d2a22e227062
+Reciphers for ciphertext: 0
+Decipheredtext:           c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 56
+Hash algorithm:       6
+Sector size in bytes: 3072
+Data unit:   56
+Start block: 113
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            38383838383838383838383838383838383838383838383838383838383838383838383838383838383838383838383838383838383838383838383838383838
+Plaintext:                c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7
+Ciphertext:               6604dfc5640f7f8d9f2a9fa646867c194f62e2c295381bd58abcafce818216bb4dc68dd1304a435faf730a1acf5eb063
+Reciphers for ciphertext: 0
+Decipheredtext:           c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 57
+Hash algorithm:       11
+Sector size in bytes: 3072
+Data unit:   57
+Start block: 115
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            39393939393939393939393939393939393939393939393939393939393939393939393939393939393939393939393939393939393939393939393939393939
+Plaintext:                c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6
+Ciphertext:               dd7edfcd69580bf3343fcd33e82d3f0444b9a19ec074af58fd4d85d1f845b6f8
+Reciphers for ciphertext: 0
+Decipheredtext:           c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 58
+Hash algorithm:       0
+Sector size in bytes: 3072
+Data unit:   58
+Start block: 117
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a
+Plaintext:                c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5
+Ciphertext:               0030d52863c376751656fc5b6fd3c0f5ee40b63b8ba46589e51c1d1e14412b528b8d21c7
+Reciphers for ciphertext: 0
+Decipheredtext:           c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 59
+Hash algorithm:       9
+Sector size in bytes: 3072
+Data unit:   59
+Start block: 119
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b
+Plaintext:                c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4
+Ciphertext:               2856c8d2e81512483d94e976bfd555d788b187043745cc856b3e63f67e21d033a9d217b9c44b6092559d9715e6ab56fd
+Reciphers for ciphertext: 0
+Decipheredtext:           c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 60
+Hash algorithm:       9
+Sector size in bytes: 3584
+Data unit:   60
+Start block: 121
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c
+Plaintext:                c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3
+Ciphertext:               12beff30c141e21f051654dba44f0267997be89d149a522db0610506ad76a236fa6017e88ac99620e879ac05da231e98
+Reciphers for ciphertext: 0
+Decipheredtext:           c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 61
+Hash algorithm:       0
+Sector size in bytes: 3584
+Data unit:   61
+Start block: 123
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d
+Plaintext:                c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2
+Ciphertext:               9965bfe05f450561c82da28ce6d23b4c438c2ec5f68b9fa96cc81f70c84270c16057c3c9
+Reciphers for ciphertext: 0
+Decipheredtext:           c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 62
+Hash algorithm:       13
+Sector size in bytes: 3584
+Data unit:   62
+Start block: 125
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e
+Plaintext:                c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1
+Ciphertext:               799ea4151c5e7f729872fb93cb2eac4f066e39e93b45e7a4bbbd7a94f7a71d70
+Reciphers for ciphertext: 0
+Decipheredtext:           c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 63
+Hash algorithm:       4
+Sector size in bytes: 3584
+Data unit:   63
+Start block: 127
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f
+Plaintext:                c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0
+Ciphertext:               6f8d91b379d8f206799cc075df0810386b70ef87c949c4461da58f6cc4837f067e99a7d8682577129297de59e7b90dcd080fca8effe4360f255aa3e5feca71e0acb7dc6462cce63d1063016bc879f25b
+Reciphers for ciphertext: 0
+Decipheredtext:           c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 64
+Hash algorithm:       6
+Sector size in bytes: 3584
+Data unit:   64
+Start block: 129
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            40404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040404040
+Plaintext:                bfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbf
+Ciphertext:               34df0eccbdd6a971f2b18fbd28156ce21734646de220f7fe4fea7f3ffe1796ef3aed021e2c5797d5f92ab81beed5b620
+Reciphers for ciphertext: 0
+Decipheredtext:           bfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbf
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 65
+Hash algorithm:       7
+Sector size in bytes: 3584
+Data unit:   65
+Start block: 131
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            41414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141414141
+Plaintext:                bebebebebebebebebebebebebebebebe
+Ciphertext:               15575ff0f3e1f88e616ca708c337a85f85a530730684ed4e66d36569ab6178d4
+Reciphers for ciphertext: 0
+Decipheredtext:           bebebebebebebebebebebebebebebebe
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 66
+Hash algorithm:       13
+Sector size in bytes: 3584
+Data unit:   66
+Start block: 133
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            42424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242424242
+Plaintext:                bdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbd
+Ciphertext:               3385f42f4ef88856ce5b2a2ff1329c7163afc04e19dc0b2597faf964de0b879e
+Reciphers for ciphertext: 0
+Decipheredtext:           bdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbd
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 67
+Hash algorithm:       11
+Sector size in bytes: 3584
+Data unit:   67
+Start block: 135
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            43434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343434343
+Plaintext:                bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+Ciphertext:               62e451bfc6afb3136ea56c22e7c5b880386ad270dcfef8fe3b002f6220b868ed
+Reciphers for ciphertext: 0
+Decipheredtext:           bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 68
+Hash algorithm:       11
+Sector size in bytes: 3584
+Data unit:   68
+Start block: 137
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444
+Plaintext:                bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Ciphertext:               b91ae569fd5f4b8fdb99daf69b5a888740e648528ddb6212e6d48c095bd24031
+Reciphers for ciphertext: 0
+Decipheredtext:           bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 69
+Hash algorithm:       3
+Sector size in bytes: 3584
+Data unit:   69
+Start block: 139
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            45454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545
+Plaintext:                babababababababababababababababa
+Ciphertext:               588e1658ec815bcd2bcdbd2c06c26a4d0638c2e3c01d94639e0b4dab6b4d3137b9a5368d9d5bb55361e9997830ad977f814b6fdaf6d29c21a0cfdad6c57122e6
+Reciphers for ciphertext: 0
+Decipheredtext:           babababababababababababababababa
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 70
+Hash algorithm:       4
+Sector size in bytes: 4096
+Data unit:   70
+Start block: 141
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            46464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646
+Plaintext:                b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9
+Ciphertext:               fc86ec2d21af7dc248012e6d7c2ed194baa652ba26eb778a05dc10146c8806e808c521693f6415a68e0a47e05ff19eb9ee01664e0a489cb1d7c768724d5bed785d75545e213529f219d82ead510bf255
+Reciphers for ciphertext: 0
+Decipheredtext:           b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 71
+Hash algorithm:       8
+Sector size in bytes: 4096
+Data unit:   71
+Start block: 143
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            47474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747
+Plaintext:                b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8
+Ciphertext:               1c19992bbc16c86cada07cbfd27a6956aa7081aa9c1699fb0f4738b66a51fa70d6014ce3
+Reciphers for ciphertext: 0
+Decipheredtext:           b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 72
+Hash algorithm:       10
+Sector size in bytes: 4096
+Data unit:   72
+Start block: 145
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            48484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848484848
+Plaintext:                b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7
+Ciphertext:               7e6f97495c74f0fcde45a7ecc7e5d870d122538a4bdaab26426804439724955d89c8598332456944a3588316a3dcebf13dc6f5a35fa49915
+Reciphers for ciphertext: 0
+Decipheredtext:           b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 73
+Hash algorithm:       3
+Sector size in bytes: 4096
+Data unit:   73
+Start block: 147
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            49494949494949494949494949494949494949494949494949494949494949494949494949494949494949494949494949494949494949494949494949494949
+Plaintext:                b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6
+Ciphertext:               cd67dfae88ab97be894e28ac97fec270f0e6fd6e745ff33b1b3a41761b33568ff88752846d0a7a746ea29ea90af636528dbe96132291076618afde1badf96a76
+Reciphers for ciphertext: 0
+Decipheredtext:           b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 74
+Hash algorithm:       9
+Sector size in bytes: 4096
+Data unit:   74
+Start block: 149
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a
+Plaintext:                b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5
+Ciphertext:               887176cc02769366e2ac341228bd6cdda49a9f6414a05c54a18b9dfced3a963a6f4fb4df9283a5050592e5e681b67c75
+Reciphers for ciphertext: 0
+Decipheredtext:           b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 75
+Hash algorithm:       3
+Sector size in bytes: 4096
+Data unit:   75
+Start block: 151
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b
+Plaintext:                b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4
+Ciphertext:               86381c80b877804379987b5b9592315dc38c2dbe787754c47cd7d0bb95bbc3cc5919fbaae2e1bf20e410704d66ae67fffc5b48bd873fdc75394491abb51542b0
+Reciphers for ciphertext: 0
+Decipheredtext:           b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 76
+Hash algorithm:       13
+Sector size in bytes: 4096
+Data unit:   76
+Start block: 153
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c
+Plaintext:                b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3
+Ciphertext:               b48c81343185513525fbf2ddf672e83b81fcc6b621854535c47051e682fde6d9
+Reciphers for ciphertext: 0
+Decipheredtext:           b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 77
+Hash algorithm:       2
+Sector size in bytes: 4096
+Data unit:   77
+Start block: 155
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d
+Plaintext:                b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2
+Ciphertext:               2c3c9c2a7aaf58537861f63dc15e755d2e810c7416a4a43054821dc7a8efcf8b8e1b9eec80eb6af8a5c287fab5b1f003
+Reciphers for ciphertext: 0
+Decipheredtext:           b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 78
+Hash algorithm:       8
+Sector size in bytes: 4096
+Data unit:   78
+Start block: 157
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e
+Plaintext:                b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1
+Ciphertext:               913da48d04c464ddea7eb2bf8a85401dd550430c970a8b1dd0df439ab359bb0daa22ad22
+Reciphers for ciphertext: 0
+Decipheredtext:           b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 79
+Hash algorithm:       8
+Sector size in bytes: 4096
+Data unit:   79
+Start block: 159
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f
+Plaintext:                b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0
+Ciphertext:               2dae6d5b940b3f21041ba913b32aafa9b4db0412e7998254a0c70a16c72d6e6bab3b1f7c
+Reciphers for ciphertext: 0
+Decipheredtext:           b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 80
+Hash algorithm:       7
+Sector size in bytes: 8192
+Data unit:   80
+Start block: 161
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            50505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050505050
+Plaintext:                afafafafafafafafafafafafafafafaf
+Ciphertext:               3c3aa038b652217ccd0e3f1bb4ff2fc16dc6a0312b2fc4d8baf0db86712392d0
+Reciphers for ciphertext: 0
+Decipheredtext:           afafafafafafafafafafafafafafafaf
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 81
+Hash algorithm:       3
+Sector size in bytes: 8192
+Data unit:   81
+Start block: 163
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            51515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151515151
+Plaintext:                aeaeaeaeaeaeaeaeaeaeaeaeaeaeaeae
+Ciphertext:               15a4d9596a618f651e2a12e9f50e4d3fc8bb94c1dd7d107776017b201d0a8b7f07ed3cdd2f3ed4deef8f09246db3c8a9535d10d0f39ba9af7f0685685cf1a379
+Reciphers for ciphertext: 0
+Decipheredtext:           aeaeaeaeaeaeaeaeaeaeaeaeaeaeaeae
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 82
+Hash algorithm:       0
+Sector size in bytes: 8192
+Data unit:   82
+Start block: 165
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            52525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252
+Plaintext:                adadadadadadadadadadadadadadadad
+Ciphertext:               9aedaabc80fb0dd02d74c39715ad425864bbc966f792a0c16d14d3dd9cdb180879ec034e
+Reciphers for ciphertext: 0
+Decipheredtext:           adadadadadadadadadadadadadadadad
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 83
+Hash algorithm:       0
+Sector size in bytes: 8192
+Data unit:   83
+Start block: 167
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            53535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353535353
+Plaintext:                acacacacacacacacacacacacacacacac
+Ciphertext:               d8610dd5dfe40584339026c23797cb129390e41b9ba2b86a7eacdaa5bd20fea1ac06b6cf
+Reciphers for ciphertext: 0
+Decipheredtext:           acacacacacacacacacacacacacacacac
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 84
+Hash algorithm:       13
+Sector size in bytes: 8192
+Data unit:   84
+Start block: 169
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            54545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454545454
+Plaintext:                abababababababababababababababab
+Ciphertext:               01d120a090b455cc13001ae78c4a947c73172d4d596a75b724cb68b13a1dda65
+Reciphers for ciphertext: 0
+Decipheredtext:           abababababababababababababababab
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 85
+Hash algorithm:       9
+Sector size in bytes: 8192
+Data unit:   85
+Start block: 171
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            55555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555555
+Plaintext:                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Ciphertext:               5354a270c71ea01b7c0b1a7a93608d1ebf8c29002a7981c719ce1afad19bf2328b81939cb787fa1d5db7d9944b771b70
+Reciphers for ciphertext: 0
+Decipheredtext:           aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 86
+Hash algorithm:       10
+Sector size in bytes: 8192
+Data unit:   86
+Start block: 173
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            56565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656
+Plaintext:                a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9
+Ciphertext:               76583269d5e0ba616ee9edd2240596b15025a6c2a3739d9788c734a8102adff9f6253bdc453d193876def42753fa709247a7b65a853075c8
+Reciphers for ciphertext: 0
+Decipheredtext:           a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 87
+Hash algorithm:       2
+Sector size in bytes: 8192
+Data unit:   87
+Start block: 175
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            57575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757
+Plaintext:                a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8
+Ciphertext:               4397f735ddc3bfa0a15de590e7bca3a0b2832c3e057901009b8fa0c3e68d2735c0f6688ef39ecc721fab50e201471666
+Reciphers for ciphertext: 0
+Decipheredtext:           a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 88
+Hash algorithm:       4
+Sector size in bytes: 8192
+Data unit:   88
+Start block: 177
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            58585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858585858
+Plaintext:                a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7
+Ciphertext:               8873b38118bb323ba6f1697b88aab221540fc94dbce0d222a3c597f2a498817ecc3b17d8b9d9d8d9c8695f072259336b4597478b42ce9ffbf291efd5397b90f12b5009bf24cbd4063ce9a78b8743ccc7
+Reciphers for ciphertext: 0
+Decipheredtext:           a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 89
+Hash algorithm:       13
+Sector size in bytes: 8192
+Data unit:   89
+Start block: 179
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            59595959595959595959595959595959595959595959595959595959595959595959595959595959595959595959595959595959595959595959595959595959
+Plaintext:                a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6
+Ciphertext:               cfd707033f992657c4d668462dcd173c7e2a4a3144e0c159f6c95ccbef5aa6c2
+Reciphers for ciphertext: 0
+Decipheredtext:           a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 90
+Hash algorithm:       3
+Sector size in bytes: 12288
+Data unit:   90
+Start block: 181
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a
+Plaintext:                a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+Ciphertext:               e2c59b64f0e99f103751a93f3392a2604e691f27b8a6826e22a5153fc6ccb145e6e6980447397633b20beed7752732b1a927bb07d44455eac0f84fbd4de44387
+Reciphers for ciphertext: 0
+Decipheredtext:           a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 91
+Hash algorithm:       9
+Sector size in bytes: 12288
+Data unit:   91
+Start block: 183
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b
+Plaintext:                a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4
+Ciphertext:               e701c23ec372d5b741fb33e3e75456511618445ec6a47022152f4d286436f857be3f63c88ad1f06591d6221da61e842b
+Reciphers for ciphertext: 0
+Decipheredtext:           a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 92
+Hash algorithm:       12
+Sector size in bytes: 12288
+Data unit:   92
+Start block: 185
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c
+Plaintext:                a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3
+Ciphertext:               7884dc71be8983c9bd07a490efb0286451e5653d0316292372c686a667600784
+Reciphers for ciphertext: 0
+Decipheredtext:           a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 93
+Hash algorithm:       1
+Sector size in bytes: 12288
+Data unit:   93
+Start block: 187
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d
+Plaintext:                a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2
+Ciphertext:               aafa83292b0677085499cce598312b505c37249c7f853051f3b379f7b3dcac9125440a1950c858f65b1b14dd
+Reciphers for ciphertext: 0
+Decipheredtext:           a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 94
+Hash algorithm:       6
+Sector size in bytes: 12288
+Data unit:   94
+Start block: 189
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e
+Plaintext:                a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1
+Ciphertext:               2d88ee153902cb61020205a59b6a44ff5403c107ee19e6b2194df60621ae318238bc3965758c114eba147071ebc3f1f7
+Reciphers for ciphertext: 0
+Decipheredtext:           a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 95
+Hash algorithm:       8
+Sector size in bytes: 12288
+Data unit:   95
+Start block: 191
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f
+Plaintext:                a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0
+Ciphertext:               04c38c5c41e00575d2b369f2302ba63800f835abd2c77ce69233767ba6887bc5b9643a72
+Reciphers for ciphertext: 0
+Decipheredtext:           a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 96
+Hash algorithm:       3
+Sector size in bytes: 12288
+Data unit:   96
+Start block: 193
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            60606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060606060
+Plaintext:                9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f
+Ciphertext:               93889d78cbc763ea4b5c11a6e836b116081c7db2b75ca03a27a7e43ee679e76891d720c9cb64cb268fc6c0965bbdafa3c14210ef1b1dea7c9b320c9c6e23c58c
+Reciphers for ciphertext: 0
+Decipheredtext:           9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 97
+Hash algorithm:       4
+Sector size in bytes: 12288
+Data unit:   97
+Start block: 195
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            61616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161616161
+Plaintext:                9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e
+Ciphertext:               0c55096b53cdf83b44443bc7ff41cf7e3b84eced7ce7d759285828a6986a7d8cd869319bd148d69fe70d420af1c67536e74449d033dbd2568296c52efc91d43768d79138293aacf4b0a5e455d7757660
+Reciphers for ciphertext: 0
+Decipheredtext:           9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 98
+Hash algorithm:       9
+Sector size in bytes: 12288
+Data unit:   98
+Start block: 197
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            62626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262626262
+Plaintext:                9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d
+Ciphertext:               274b22c43c7495a7b9b218f99ba6521d2d4cc2506f6343efd43de00a0f11bd09edd8001841fa8eec672c4812f9936650
+Reciphers for ciphertext: 0
+Decipheredtext:           9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 99
+Hash algorithm:       2
+Sector size in bytes: 12288
+Data unit:   99
+Start block: 199
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            63636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363636363
+Plaintext:                9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c
+Ciphertext:               a9dd8dbb4725efff9c9cdaec350f3fd5a02e746e32dc92c54d36b76e09a0c11f595ae8e3d5704a708dc99dff76e40789
+Reciphers for ciphertext: 0
+Decipheredtext:           9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 100
+Hash algorithm:       5
+Sector size in bytes: 16384
+Data unit:   100
+Start block: 201
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            64646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464646464
+Plaintext:                9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b
+Ciphertext:               fd198eed2cfdc9a5e81cd0965e3e34172a1f6b7f9a598b6a02915cce06269044da5200c028f3dc8b6575dbc1
+Reciphers for ciphertext: 0
+Decipheredtext:           9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 101
+Hash algorithm:       5
+Sector size in bytes: 16384
+Data unit:   101
+Start block: 203
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            65656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565656565
+Plaintext:                9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a
+Ciphertext:               b1dc4d0c6f1e052d21834b9e86692205eda9e4f6cd96c7f7e2dd2803c91bf76d101cb5917f79f818ada32811
+Reciphers for ciphertext: 0
+Decipheredtext:           9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 102
+Hash algorithm:       13
+Sector size in bytes: 16384
+Data unit:   102
+Start block: 205
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            66666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666
+Plaintext:                99999999999999999999999999999999
+Ciphertext:               12ec699c5ce178ed5ad7ab7767f9f951d8d46291e8ca8be6226a3504ba178330
+Reciphers for ciphertext: 0
+Decipheredtext:           99999999999999999999999999999999
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 103
+Hash algorithm:       10
+Sector size in bytes: 16384
+Data unit:   103
+Start block: 207
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            67676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767
+Plaintext:                98989898989898989898989898989898
+Ciphertext:               49c4eb7908c20a23403847939f605cc0d88d83080c17126ff5e8d2918af0031e17407fd9ae13cf4e9fd89cafb70cb89d4e573a31c10a204e
+Reciphers for ciphertext: 0
+Decipheredtext:           98989898989898989898989898989898
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 104
+Hash algorithm:       9
+Sector size in bytes: 16384
+Data unit:   104
+Start block: 209
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            68686868686868686868686868686868686868686868686868686868686868686868686868686868686868686868686868686868686868686868686868686868
+Plaintext:                97979797979797979797979797979797
+Ciphertext:               9e8a40aea1f2f1147bafb5f93a4f413218c28b59659cb5d263c70c195c16a26cc5a5eb007b7e32f36d1574168e2ae6c9
+Reciphers for ciphertext: 0
+Decipheredtext:           97979797979797979797979797979797
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 105
+Hash algorithm:       7
+Sector size in bytes: 16384
+Data unit:   105
+Start block: 211
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            69696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969696969
+Plaintext:                96969696969696969696969696969696
+Ciphertext:               3b4fd951276ded6525ac5f4e786ae77dacc3a373cf72db5849284142792b58ec
+Reciphers for ciphertext: 0
+Decipheredtext:           96969696969696969696969696969696
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 106
+Hash algorithm:       4
+Sector size in bytes: 16384
+Data unit:   106
+Start block: 213
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a
+Plaintext:                95959595959595959595959595959595
+Ciphertext:               fbca54412e2f9dda9224b312a9242e624d04b585be563436f5292378f39144685d49d0a8e277e86e7b492530f774caeb18abb1ca25d0560884cfcf0b75f245268e7a327e52f731f72b610ccba0a0ad9b
+Reciphers for ciphertext: 0
+Decipheredtext:           95959595959595959595959595959595
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 107
+Hash algorithm:       2
+Sector size in bytes: 16384
+Data unit:   107
+Start block: 215
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b
+Plaintext:                94949494949494949494949494949494
+Ciphertext:               528c46c3da1fe5c35f0c1b318b0db2b749fb43cec6e6843df24ef4415be8e4f857c97a6e848868a7d79640329d0b119f
+Reciphers for ciphertext: 0
+Decipheredtext:           94949494949494949494949494949494
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 108
+Hash algorithm:       12
+Sector size in bytes: 16384
+Data unit:   108
+Start block: 217
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c
+Plaintext:                93939393939393939393939393939393
+Ciphertext:               e7e1c08cfb763da24fe6004c2abe55d2ded84c5474abc2bfa43afe93b16dc0a0
+Reciphers for ciphertext: 0
+Decipheredtext:           93939393939393939393939393939393
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 109
+Hash algorithm:       7
+Sector size in bytes: 16384
+Data unit:   109
+Start block: 219
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d
+Plaintext:                92929292929292929292929292929292
+Ciphertext:               763a1890ea83dc9948e72bff2b359198020aa84244faf78f660e034a128d2785
+Reciphers for ciphertext: 0
+Decipheredtext:           92929292929292929292929292929292
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 110
+Hash algorithm:       10
+Sector size in bytes: 24576
+Data unit:   110
+Start block: 221
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e
+Plaintext:                91919191919191919191919191919191
+Ciphertext:               f06df640927ee7fd1dfef5a7a3ebfc0460aa72ee762f8ea71560f1793b6e89b3af98e1b6feb57ef543c56196fa6d9138f840f8f7467ecf28
+Reciphers for ciphertext: 0
+Decipheredtext:           91919191919191919191919191919191
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 111
+Hash algorithm:       8
+Sector size in bytes: 24576
+Data unit:   111
+Start block: 223
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f
+Plaintext:                90909090909090909090909090909090
+Ciphertext:               1c42a51abe3347e2df53788f7686d58c0db98f97f117d5a221c5b271d8d0615f66dca1bd
+Reciphers for ciphertext: 0
+Decipheredtext:           90909090909090909090909090909090
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 112
+Hash algorithm:       6
+Sector size in bytes: 24576
+Data unit:   112
+Start block: 225
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            70707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070707070
+Plaintext:                8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f
+Ciphertext:               eae558c9a77837313c09573bc87f830b976c375a8975fd91d60d7a695196ec23c2774dc140eb35ffacebb6679a74827d
+Reciphers for ciphertext: 0
+Decipheredtext:           8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 113
+Hash algorithm:       10
+Sector size in bytes: 24576
+Data unit:   113
+Start block: 227
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            71717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171717171
+Plaintext:                8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e
+Ciphertext:               0d7a6dd02a7448e2ccad9e3ac3bdaf901783064fe8e9b95ad2c15cd4080bf715c495d366318e2cbc7d215f67919eceff22c78fb367b9a2ca
+Reciphers for ciphertext: 0
+Decipheredtext:           8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 114
+Hash algorithm:       8
+Sector size in bytes: 24576
+Data unit:   114
+Start block: 229
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            72727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272
+Plaintext:                8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d
+Ciphertext:               294d1e182ca33b608c0a239e2e589094e0a4887973772d3d9a741685a32551e3bbc6e940
+Reciphers for ciphertext: 0
+Decipheredtext:           8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 115
+Hash algorithm:       7
+Sector size in bytes: 24576
+Data unit:   115
+Start block: 231
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            73737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373737373
+Plaintext:                8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c
+Ciphertext:               cf5eb0de8ab0935bc13f48dc0ea3a469d2b188a6c877849f02e6f96157f5da78
+Reciphers for ciphertext: 0
+Decipheredtext:           8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 116
+Hash algorithm:       3
+Sector size in bytes: 24576
+Data unit:   116
+Start block: 233
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            74747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474747474
+Plaintext:                8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b
+Ciphertext:               f55dbd7a7239cd0671c61d0e3d76e959228812b1b7ab9542729177d986304a9d9e92d2c51180911e6a5a0b15dd1fcb72598eb114048009b1a6286c3ba9a5ec6d
+Reciphers for ciphertext: 0
+Decipheredtext:           8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 117
+Hash algorithm:       12
+Sector size in bytes: 24576
+Data unit:   117
+Start block: 235
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            75757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575757575
+Plaintext:                8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a
+Ciphertext:               21fada7577ce421ec4d850557365ed5ba757ef4350f6885f22eae3576d627a9f
+Reciphers for ciphertext: 0
+Decipheredtext:           8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 118
+Hash algorithm:       6
+Sector size in bytes: 24576
+Data unit:   118
+Start block: 237
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            76767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676767676
+Plaintext:                89898989898989898989898989898989
+Ciphertext:               74379ab8bc3c19f574ceead055e144bd2988dd3c83ae9fc817aba97229b3624beefc136cacbc3d4d95fde9d6b3301485
+Reciphers for ciphertext: 0
+Decipheredtext:           89898989898989898989898989898989
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 119
+Hash algorithm:       9
+Sector size in bytes: 24576
+Data unit:   119
+Start block: 239
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
+Plaintext:                88888888888888888888888888888888
+Ciphertext:               ac84bc7ed4a45013a9acf600a4043aa74cbe2b0d74a032e869066bbd41d18de5710af7f5dcdf7709c5c3204cf6abc3af
+Reciphers for ciphertext: 0
+Decipheredtext:           88888888888888888888888888888888
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 120
+Hash algorithm:       5
+Sector size in bytes: 32768
+Data unit:   120
+Start block: 241
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            78787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878
+Plaintext:                87878787878787878787878787878787
+Ciphertext:               268cba683980ef9fb67b2b34d9de9a5a7411b3b545f09c1eff57a7151218807615f8e6d9ccdbed58d22fcf50
+Reciphers for ciphertext: 0
+Decipheredtext:           87878787878787878787878787878787
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 121
+Hash algorithm:       13
+Sector size in bytes: 32768
+Data unit:   121
+Start block: 243
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            79797979797979797979797979797979797979797979797979797979797979797979797979797979797979797979797979797979797979797979797979797979
+Plaintext:                86868686868686868686868686868686
+Ciphertext:               a7964ee5665834c78320960201d043b3ad153d42c0d3befe039bbb807701cd0f
+Reciphers for ciphertext: 0
+Decipheredtext:           86868686868686868686868686868686
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 122
+Hash algorithm:       3
+Sector size in bytes: 32768
+Data unit:   122
+Start block: 245
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a
+Plaintext:                85858585858585858585858585858585
+Ciphertext:               d08dc2eef079cba2e3f3062548ddca81b9aacb2ecad762716b4649e4273c2f1db93d410cdaf61ccf3829e5ad84284f38aa6c2e615d4fc802e988f1ccad4722d5
+Reciphers for ciphertext: 0
+Decipheredtext:           85858585858585858585858585858585
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 123
+Hash algorithm:       7
+Sector size in bytes: 32768
+Data unit:   123
+Start block: 247
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b
+Plaintext:                84848484848484848484848484848484
+Ciphertext:               6882066eda8da28a6f92515f684fe67150d3a1ce302cb7b1a24d1a169c582a07
+Reciphers for ciphertext: 0
+Decipheredtext:           84848484848484848484848484848484
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 124
+Hash algorithm:       2
+Sector size in bytes: 32768
+Data unit:   124
+Start block: 249
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c
+Plaintext:                83838383838383838383838383838383
+Ciphertext:               b94f2c679b96749793342ace9546d962b4d3ea97acf2c3d38d0557bd1cbdf3236069df52bdc11abc7dbc8ff123436727
+Reciphers for ciphertext: 0
+Decipheredtext:           83838383838383838383838383838383
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 125
+Hash algorithm:       12
+Sector size in bytes: 32768
+Data unit:   125
+Start block: 251
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d
+Plaintext:                82828282828282828282828282828282
+Ciphertext:               c2985ece439175d4ada264c2a7dc40afcf4ef23fe43e1af99ff61ce04deef359
+Reciphers for ciphertext: 0
+Decipheredtext:           82828282828282828282828282828282
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 126
+Hash algorithm:       8
+Sector size in bytes: 32768
+Data unit:   126
+Start block: 253
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e
+Plaintext:                81818181818181818181818181818181
+Ciphertext:               2a7268828b3cf3adce09b080e8e92bd78437aa67eb78e4cdd1e497840d11d302673914fb
+Reciphers for ciphertext: 0
+Decipheredtext:           81818181818181818181818181818181
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 127
+Hash algorithm:       9
+Sector size in bytes: 32768
+Data unit:   127
+Start block: 255
+Symmetric key bit length: 512
+Plaintext bit length:     128
+Symmetric key:            7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f
+Plaintext:                80808080808080808080808080808080
+Ciphertext:               d1580a1093b2dc37fa14f4c2a094a272a83d508e5d08e0934d1e72eeda0d6ad2e3362d43e5102eb6f776a77d82e0f45d
+Reciphers for ciphertext: 0
+Decipheredtext:           80808080808080808080808080808080
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+ DATA SHA1 (hexadecimal): d2c46ed6c548a16a8624c9c44c51704ca6851ee3
+

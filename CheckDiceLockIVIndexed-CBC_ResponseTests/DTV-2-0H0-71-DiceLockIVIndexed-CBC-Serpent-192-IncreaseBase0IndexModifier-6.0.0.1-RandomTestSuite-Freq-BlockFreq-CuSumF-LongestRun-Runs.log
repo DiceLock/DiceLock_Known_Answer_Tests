@@ -1,0 +1,1823 @@
+
+DiceLock 9.0.0.1
+
+ TEST COMPONENTS:
+ ----------------
+ DiceLock:           DiceLockIVIndexed class
+ Operation Mode:     CBC_Mode class
+ Crypto pads:        0 - ANSI_X_923 class
+                     1 - ISO_IEC_9797_1 class
+                     2 - PKCS7 class
+ Block Cipher:       Serpent192 class
+ Key Modifier:       IncreaseBase0IndexModifier_6_0_0_1 class
+   Index bit length: 192
+ Random tests:       RandomTestSuite class
+                     FrequencyTest class
+                     BlockFrequencyTest class
+                     CumulativeSumForwardTest class
+                     LongestRunOfOnesTest class
+                     RunsTest class
+ Random alpha:       0.001
+
+ VECTOR TEST: Test vector 7 - Symmetric key all byte value 0xXX, IV all byte value 0xYY and plaintext all byte value 0xZZ
+
+
+##### INDIVIDUAL TESTS #####
+
+Number tests: 128
+
+
+Test: 0
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            000000000000000000000000000000000000000000000000
+IV:                       ffffffffffffffffffffffffffffffff
+Plaintext:                ffffffffffffffffffffffffffffffffff
+Ciphertext:               3c537034a32d71b08e7a202059cec8ae2f0ef047ec73fcbf075c99dcb489ed7f42046b25c85dbd6b402b296a97ef83a59b646ca334b6cbc7d69e1dff42a05705
+Reciphers for ciphertext: 0
+Decipheredtext:           ffffffffffffffffffffffffffffffffff
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 1
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            010101010101010101010101010101010101010101010101
+IV:                       fefefefefefefefefefefefefefefefe
+Plaintext:                fefefefefefefefefefefefefefefefefe
+Ciphertext:               a5dfaa94e7d2f1b63b032ca0404a14d81d092c31498d38ebf1feee6df0ff931eb6efde342bc7664c2b4b751dbd0a4a900f691bc4a0971acbdf9a9b391c569d16
+Reciphers for ciphertext: 0
+Decipheredtext:           fefefefefefefefefefefefefefefefefe
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 2
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            020202020202020202020202020202020202020202020202
+IV:                       fdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfd
+Plaintext:                fdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfd
+Ciphertext:               dfb5799a7b35df2da4e4fe46f9b06fb9a3a20e5252c7ae1b4a4a33607091b3579ee8e308381931e783ee8d61fe307f6fea1849b4de0bad122fd62c59f3a373f5
+Reciphers for ciphertext: 0
+Decipheredtext:           fdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfd
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 3
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            030303030303030303030303030303030303030303030303
+IV:                       fcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfc
+Plaintext:                fcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfc
+Ciphertext:               3ed6d4212605e5424dd108c2dbcaa9f0eceb40151a6fea1afce2b07dfff4e8aef9ea1d3d9c8e328b811ca2276b792ee796cb0d65b7176571440dcd82f4dc1382
+Reciphers for ciphertext: 0
+Decipheredtext:           fcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfc
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 4
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            040404040404040404040404040404040404040404040404
+IV:                       fbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfb
+Plaintext:                fbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfb
+Ciphertext:               80eafbf601c4c9998b6ddfc20cfcfd3160e5a524a4648975d6f9e34b9c1cf493892f14c1fb523c3b91f22f345f8d6c4c1ce18841ee3ddfff69318ac6bccc7163
+Reciphers for ciphertext: 0
+Decipheredtext:           fbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 5
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            050505050505050505050505050505050505050505050505
+IV:                       fafafafafafafafafafafafafafafafa
+Plaintext:                fafafafafafafafafafafafafafafafafa
+Ciphertext:               ad157df0e12363dd072a19e37b7391d1651d31c64871c9e07ba84bf2f6410007282627f7ea83e8a0abbbc599df5d3e4f5560be7688a9ce22276952388d8377d4
+Reciphers for ciphertext: 0
+Decipheredtext:           fafafafafafafafafafafafafafafafafa
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 6
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            060606060606060606060606060606060606060606060606
+IV:                       f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9
+Plaintext:                f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9
+Ciphertext:               17b125ae7340bc63f6d76780c3d586e3ca047ba9c721595bf4da9d13fb312d8ae1d58fa2cf7a1dfa91f4c3dc7fb07cefe9c90587e0e946bfce628d8e83e44153
+Reciphers for ciphertext: 0
+Decipheredtext:           f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 7
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            070707070707070707070707070707070707070707070707
+IV:                       f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8
+Plaintext:                f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8
+Ciphertext:               edff802df0c90b0d4422442f998e6dd2144e6144fb9a54dce96ad3cc87c8b72553982e82e623e2e1c6ebf1829eb8621a5b09033e8b1225e447ece7102e30864b
+Reciphers for ciphertext: 0
+Decipheredtext:           f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 8
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            080808080808080808080808080808080808080808080808
+IV:                       f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7
+Plaintext:                f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7
+Ciphertext:               c17c1de7d5d2b63e15bb4a4e7caa8f1b45b594ca7280a895cf011d67f54f2d4188b622ecd24f0fe766ab04a52edec0c3d5a53492f7db96e665019c2655448194
+Reciphers for ciphertext: 0
+Decipheredtext:           f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 9
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            090909090909090909090909090909090909090909090909
+IV:                       f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6
+Plaintext:                f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6
+Ciphertext:               cbe5a9642147797843543fe6bb63a94a3cc8d4eac1bbf065c07755a4576eaf7304e0bd81aff1ac17ec97a3acbce6cfc35bf7385ac45debc6520bb53ac10fea99
+Reciphers for ciphertext: 0
+Decipheredtext:           f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 10
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a
+IV:                       f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5
+Plaintext:                f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5
+Ciphertext:               6bd01c6e6456463b42eea5813f92e2884fcd8498ac9f83630bac1a61125f0fb95137f263f06b818e24a341424680eea9756e1c278f219c970327fcd544f735f9
+Reciphers for ciphertext: 0
+Decipheredtext:           f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 11
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b
+IV:                       f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4
+Plaintext:                f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4
+Ciphertext:               cf1ec59fd1b6c74e009602902bbd0ee66cc1f13b1613a230a9f743f9087e46be6b04fd3cfb316726a21200832f54d813c54a4b9881bece7ede274699f8c96471
+Reciphers for ciphertext: 0
+Decipheredtext:           f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 12
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c
+IV:                       f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3
+Plaintext:                f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3
+Ciphertext:               2db8a286cfe02de14fb5c028474253806715edb68f6b42b9d9de1d6539f96bf6267cd7917674ca8cc65ca361d70727c4ce130902f1c88852d950de264bf53a31
+Reciphers for ciphertext: 0
+Decipheredtext:           f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 13
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d
+IV:                       f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2
+Plaintext:                f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2
+Ciphertext:               40091228a55fad805811c538a2f52912372804182bd0c165364d2cdd4e62355d39f8b29db22b893dec97f4cd1a2b0624b217a891508efb9fe95e23952a3955bf
+Reciphers for ciphertext: 0
+Decipheredtext:           f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 14
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e
+IV:                       f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1
+Plaintext:                f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1
+Ciphertext:               5381ba92b1ed6fbb7ee8aede4255faf73bdf7c884ec9d1cab4ffc90fb4ff4b35ae749fcb5892b6de899e01d70b6c980100063119b98683dae780a2ad7f73d200
+Reciphers for ciphertext: 0
+Decipheredtext:           f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 15
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f
+IV:                       f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0
+Plaintext:                f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0
+Ciphertext:               d4c9520402f83f2ebe122e62ea7834d748ba9078a6ff355a5f4d48c1708bc6fe96555a9510fe4ea8269235aae6f48fcb24422042cfbeb3c59afbf86a1caed8da
+Reciphers for ciphertext: 0
+Decipheredtext:           f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 16
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            101010101010101010101010101010101010101010101010
+IV:                       efefefefefefefefefefefefefefefef
+Plaintext:                efefefefefefefefefefefefefefefefef
+Ciphertext:               bd5ff2db39cbb51034f5c641b2f6284548928756557ac4c9b5a9f6a1f705eb9febb38718e3382b40280ab9baad695d4bfbb567398ddc25b92a2a3351e4ed0d90
+Reciphers for ciphertext: 0
+Decipheredtext:           efefefefefefefefefefefefefefefefef
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 17
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            111111111111111111111111111111111111111111111111
+IV:                       eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Plaintext:                eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Ciphertext:               177e19151f535644508096ee0936853221da08322bc3c92dfe3476beaa875f81f8d052967608c83b35d552bad4c5748a3710df1b28a0017ca8078b97e1ed107d
+Reciphers for ciphertext: 0
+Decipheredtext:           eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 18
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            121212121212121212121212121212121212121212121212
+IV:                       edededededededededededededededed
+Plaintext:                ededededededededededededededededed
+Ciphertext:               7f8ef1bc72ca64ad61285928a3e4341988fe98ecc08b87adfab116ae5e38d6e8c352149b98afef0c70df30778dc449093b9bd129b6a7615344614da95c197053
+Reciphers for ciphertext: 0
+Decipheredtext:           ededededededededededededededededed
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 19
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            131313131313131313131313131313131313131313131313
+IV:                       ecececececececececececececececec
+Plaintext:                ececececececececececececececececec
+Ciphertext:               18a7ee2b9699718cc9b6547ccf9d3bb2404b9b647a98354f304dd7e31d68ac6596aac78814d640da038b9a0da22c761e935b46648be51e799070915ba1876676
+Reciphers for ciphertext: 0
+Decipheredtext:           ececececececececececececececececec
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 20
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            141414141414141414141414141414141414141414141414
+IV:                       ebebebebebebebebebebebebebebebeb
+Plaintext:                ebebebebebebebebebebebebebebebebeb
+Ciphertext:               fe93b6de4cbc81074f4fc1e56712d3f14cdd35b54aacc0beaf210776d92c738b1737c7abe8d013610fc4c0696387caf6fa913a343e214b0f0aac2e6493b2ecf6
+Reciphers for ciphertext: 0
+Decipheredtext:           ebebebebebebebebebebebebebebebebeb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 21
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            151515151515151515151515151515151515151515151515
+IV:                       eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea
+Plaintext:                eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea
+Ciphertext:               0fc4c0e4111930640ffb1bcba6811aaa5576978e64318f28f44820e37e5590f9e6d1f0201933cfbefc55a0bb8247c55904e7f4045d5ae33c3392ee4bf23dd333
+Reciphers for ciphertext: 0
+Decipheredtext:           eaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaea
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 22
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            161616161616161616161616161616161616161616161616
+IV:                       e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9
+Plaintext:                e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9
+Ciphertext:               c7680fd73e8b749705cd93faf4fec9314b8a232e4f0b663abd7b119a8fdefed0da3b1f5e2495363f0dc9d310bd83f974a8f472239a5e73a323b5b6f150397b10
+Reciphers for ciphertext: 0
+Decipheredtext:           e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 23
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            171717171717171717171717171717171717171717171717
+IV:                       e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8
+Plaintext:                e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8
+Ciphertext:               b7551febd540b396a083e28581b82c5e73bd5fa4a758a801345de898c7b8940f9abf28609060c6a3e5a7ec5c3981d21e4caf918aab824675cfc1c040165ced74
+Reciphers for ciphertext: 0
+Decipheredtext:           e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 24
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            181818181818181818181818181818181818181818181818
+IV:                       e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7
+Plaintext:                e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7
+Ciphertext:               47ba982149280ea945d87cfeb45272a9dd748430af4126332668bec942bd917e55c4e0b5015fdf428ff16386bfe969aede4bc6387387518b533a8074ad81080d
+Reciphers for ciphertext: 0
+Decipheredtext:           e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 25
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            191919191919191919191919191919191919191919191919
+IV:                       e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6
+Plaintext:                e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6
+Ciphertext:               bd87fe2257126701ca5fa0e4a501451225596b29637927c80c47d224f2db506beaf2eba1268cc0395253eb87a4c785a1ad25ed582ff99146022fc4097554ffd3
+Reciphers for ciphertext: 0
+Decipheredtext:           e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 26
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a
+IV:                       e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5
+Plaintext:                e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5
+Ciphertext:               94d5af1da7c362f40d0484d7685403a425679cf7295ba61c48d024186edc43c419644443a59eff304416fb116f85c0d19e82835bb8f3d381169f375baa2a99fb
+Reciphers for ciphertext: 0
+Decipheredtext:           e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 27
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b
+IV:                       e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4
+Plaintext:                e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4
+Ciphertext:               c31718a1a3321b776b7f0d967c8be46046406c9d377debae7e837ba8dcd38597e06e8e0b7788c3254c62d655b4de5d618bb86cf291c6212f2fbeed633fc77dc8
+Reciphers for ciphertext: 0
+Decipheredtext:           e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 28
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c
+IV:                       e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3
+Plaintext:                e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3
+Ciphertext:               4a191d361225e1a16027b4a5c0ba860d62268450d56005c5c591888b352e34be88b99caa84fa7b11add281a389de6dcf542af72d1c86ac0d59ee9abcb491124c
+Reciphers for ciphertext: 0
+Decipheredtext:           e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 29
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d
+IV:                       e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2
+Plaintext:                e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2
+Ciphertext:               7ba01dd6bdd5e2dbbee2fa844cafa24f7eb07960b7a00de032412b97e7000fabcc3500a73bc6c04cca9b4828eba99f83224a7f973eaa8cf74511d30e91b6d103
+Reciphers for ciphertext: 0
+Decipheredtext:           e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 30
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e
+IV:                       e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1
+Plaintext:                e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1
+Ciphertext:               3350c6821650f0ac778a5ed42a8c52324ccfb18786f7cc8ce1876207dc485127478ef0dbd78b0e98e7b74a509823e6d52c6f872cdf973d90fac3b299304a2dca
+Reciphers for ciphertext: 0
+Decipheredtext:           e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1e1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 31
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f1f
+IV:                       e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0
+Plaintext:                e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0
+Ciphertext:               641cb18560a6a15b7d0a707ceb86a5a4e189c6f7a2833549ba76481d3250be2766749b755528f36036a7accedd73c8197941c7fae3ab0d93b5984659d1c4487f
+Reciphers for ciphertext: 0
+Decipheredtext:           e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0e0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 32
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            202020202020202020202020202020202020202020202020
+IV:                       dfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf
+Plaintext:                dfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf
+Ciphertext:               360840b84cbb979f809e34f08d048c35f36c41b7b90a8bc37f73f4f58475f3a13ac1c93cae7cbe26f4ba66cf03c99f87c0c67b46a955187891cb909d2029e412
+Reciphers for ciphertext: 0
+Decipheredtext:           dfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdf
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 33
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            212121212121212121212121212121212121212121212121
+IV:                       dededededededededededededededede
+Plaintext:                dedededededededededededededededede
+Ciphertext:               8d3bdb354256fa221a7158e747a53f1b6a26dbd7cfc4b3bed6e4a2fadd358855366e8956232dd60d290a4632b812c83fc10815c6bf0929c76df84c6a5c6d48c8
+Reciphers for ciphertext: 0
+Decipheredtext:           dedededededededededededededededede
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 34
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            222222222222222222222222222222222222222222222222
+IV:                       dddddddddddddddddddddddddddddddd
+Plaintext:                dddddddddddddddddddddddddddddddddd
+Ciphertext:               ce852f564f589201fe32d6de3f25de6dacb4b8d0280a9977f7b54da4dc339430c50e56e2a9804874df3c1fb58db96d61eb4c4d77b417b59dc3e9ea67251ee726
+Reciphers for ciphertext: 0
+Decipheredtext:           dddddddddddddddddddddddddddddddddd
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 35
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            232323232323232323232323232323232323232323232323
+IV:                       dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc
+Plaintext:                dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc
+Ciphertext:               f5b45fe96953969a60ad3496ded7a07716aec8b632b25ab482f4e767b2a9321bd47aef853ab2f96fa528545edf993e419b748f8c483e854409a67a4725a6552c
+Reciphers for ciphertext: 0
+Decipheredtext:           dcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdc
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 36
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            242424242424242424242424242424242424242424242424
+IV:                       dbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdb
+Plaintext:                dbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdb
+Ciphertext:               a673372a5ab7628b520ed3d4e59395e3126613e2e08e5e73919cd446a6c25d5ace54b519204d34e58569c20e759e3e1bde355254e6b782a548bd531b14e4356d
+Reciphers for ciphertext: 0
+Decipheredtext:           dbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 37
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            252525252525252525252525252525252525252525252525
+IV:                       dadadadadadadadadadadadadadadada
+Plaintext:                dadadadadadadadadadadadadadadadada
+Ciphertext:               ab9e32b8d8cd6570cff7d4b3066772438ae5bc3579784e5b4c27e306321383273c9640ef1a00d2af3636851d9c10bc706bb364cc205f73c5a11e04f855fb2939
+Reciphers for ciphertext: 0
+Decipheredtext:           dadadadadadadadadadadadadadadadada
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 38
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            262626262626262626262626262626262626262626262626
+IV:                       d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9
+Plaintext:                d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9
+Ciphertext:               9542c909eccc3218b18727f29c8670cdb8714a63d36db4f807886cc6ad432d992f99a611de3f11dc313f427d6d0b439555c320e7658ac1055d045129b2d845e5
+Reciphers for ciphertext: 0
+Decipheredtext:           d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 39
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            272727272727272727272727272727272727272727272727
+IV:                       d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8
+Plaintext:                d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8
+Ciphertext:               ab0f34f06f1fac49ce7b71d3b7d95216c68a073c577a920df7f5cc56fb5087afbdce71001a300f8cf69b590b424849e5e30a03041e509d0d2b63435b474052dd
+Reciphers for ciphertext: 0
+Decipheredtext:           d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 40
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            282828282828282828282828282828282828282828282828
+IV:                       d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7
+Plaintext:                d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7
+Ciphertext:               fa29e3c756c0a595173cb09b5b86cf8d026b24a9982d9900247693324314ffb96e2925bb9791ad620594ca597daf2ff743540ff779c81454f932ded0606736c9
+Reciphers for ciphertext: 0
+Decipheredtext:           d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 41
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            292929292929292929292929292929292929292929292929
+IV:                       d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6
+Plaintext:                d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6
+Ciphertext:               99be7401753acc52735efd0c233d5508e51ca597f587c4c1285f4460a5ff9dd19654621a57d20bb9ef2b9bb7315a37299849ef6ebd9659af3561c69cd0765470
+Reciphers for ciphertext: 0
+Decipheredtext:           d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 42
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a
+IV:                       d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5
+Plaintext:                d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5
+Ciphertext:               b7b006de06ef3dd91d37c64c7578ca9c3bb4cc8e6e209a6a3d0a35c30e9da81c7b89a2e63b2c366c0b9e73fdecf4fed395ee7fdcbeff39fb02ca24bb457b9766
+Reciphers for ciphertext: 0
+Decipheredtext:           d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 43
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b
+IV:                       d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4
+Plaintext:                d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4
+Ciphertext:               ffcfcbd1acf1c2650a8b1513ed21ca0b7fadb16ab4dbef3069f64a882305e43e8b6139bd09287ac2aa942cef4151ee42c81e30405847bcf7ce8c424f70e083c1
+Reciphers for ciphertext: 0
+Decipheredtext:           d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 44
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c
+IV:                       d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3
+Plaintext:                d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3
+Ciphertext:               07a42b7afc80e8f16b35c5cd1e0169905c7f52bafab1cf4dee1fb37b53a8e7b2ec0a3b45bdaa48a29013d241729e454f657d30f7dfc898b19da7df06e45fce4e
+Reciphers for ciphertext: 0
+Decipheredtext:           d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 45
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d
+IV:                       d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2
+Plaintext:                d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2
+Ciphertext:               3d33d3be4476d9e0896bafa3b5f8f3c2c71db972862bcf165cf207a8c5da24cc44495f29f6e53fc0f2d88ad0d9ac7833070964963d7d8bafd7dfd5a1c39b7cd3
+Reciphers for ciphertext: 0
+Decipheredtext:           d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 46
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e2e
+IV:                       d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1
+Plaintext:                d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1
+Ciphertext:               ad9491c912355a7714d3d539560bf06dabc82c5574310ba780dc2b2e6e6b76b66ab2cd4979bb9e39f3d9a6e153cf13d2243eebf2f3c73f962b30e8fd38f77bcc
+Reciphers for ciphertext: 0
+Decipheredtext:           d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1d1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 47
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f2f
+IV:                       d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0
+Plaintext:                d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0
+Ciphertext:               fb97bc0fbf93863df1f63b86c9588ddf1173abf2d625f7fd5a6449a51f0bd6354b7719186841302fbe48296cbea054e03f6f78df09bb423a59995b74dba44dd4
+Reciphers for ciphertext: 0
+Decipheredtext:           d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0d0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 48
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            303030303030303030303030303030303030303030303030
+IV:                       cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf
+Plaintext:                cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf
+Ciphertext:               a38dee3d5612a7135a9bbc8dfa0bb3e0b5bb3f992abe6a700ea70bbeba5ef122d79fe27179cfc3efbf61245cd912a0e8f599c8f944886b1e898c9180f98ec464
+Reciphers for ciphertext: 0
+Decipheredtext:           cfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcfcf
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 49
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            313131313131313131313131313131313131313131313131
+IV:                       cececececececececececececececece
+Plaintext:                cecececececececececececececececece
+Ciphertext:               eb86f99ceaf79def89578f3d8943e2489fd203337e5562095c570f387fba35e9d650fcc9172a25c391d37d44a817bdfea7a5a6ac8f48e761ef162dc785cff85d
+Reciphers for ciphertext: 0
+Decipheredtext:           cecececececececececececececececece
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 50
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            323232323232323232323232323232323232323232323232
+IV:                       cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd
+Plaintext:                cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd
+Ciphertext:               705448a9e8b82770e42c84b4914501cda4c2f1ca3d7fd92429c312163ac3c59bef5c66b60dbc1ecc17f8f088eaadb999c428cb169e355576e90bd7244e30a7a6
+Reciphers for ciphertext: 0
+Decipheredtext:           cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 51
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            333333333333333333333333333333333333333333333333
+IV:                       cccccccccccccccccccccccccccccccc
+Plaintext:                cccccccccccccccccccccccccccccccccc
+Ciphertext:               46820728e87a2122edd7ee6ff5313d8126d66e2d2e91fc972ddf46bbece00cf6e88437ba533b02ee0f587d317075fc6927ccd23629b81710f6cc7ce669201ede
+Reciphers for ciphertext: 0
+Decipheredtext:           cccccccccccccccccccccccccccccccccc
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 52
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            343434343434343434343434343434343434343434343434
+IV:                       cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+Plaintext:                cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+Ciphertext:               b2c5be36b9ef50018e7dac82a1c809da8d3ef90a1fe76fa41f8b0813fc39e0725259da15d03fc4ef0ad57b8dfb66df0d6857a0e9fb10d80b8d536958ca05f919
+Reciphers for ciphertext: 0
+Decipheredtext:           cbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 53
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            353535353535353535353535353535353535353535353535
+IV:                       cacacacacacacacacacacacacacacaca
+Plaintext:                cacacacacacacacacacacacacacacacaca
+Ciphertext:               06c9f6f79f854fefd4c35a6e26e1a9ceaa9491859332e674568c9aa7afa1fc1987c66228d8c937264739e363ae190b22be0fb5815629520e4e4f42b513374063
+Reciphers for ciphertext: 0
+Decipheredtext:           cacacacacacacacacacacacacacacacaca
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 54
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            363636363636363636363636363636363636363636363636
+IV:                       c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9
+Plaintext:                c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9
+Ciphertext:               610d9e368e3b35d300bc5b79bad0d6995c4e4a0378db6cc039c9cca6af2d531a05b815d72005a91e52004550950ebeeb9310b4fbddb8f12ffb4d4a8d6a71e020
+Reciphers for ciphertext: 0
+Decipheredtext:           c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 55
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            373737373737373737373737373737373737373737373737
+IV:                       c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8
+Plaintext:                c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8
+Ciphertext:               ca76c7df1ea2469d966c7c707e2d6d147296f286c70f8da7b972b923d3f713872b1fcf3832c5b83a978d4c9faacda116b59bc25f4d6119b977d057864b825781
+Reciphers for ciphertext: 0
+Decipheredtext:           c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 56
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            383838383838383838383838383838383838383838383838
+IV:                       c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7
+Plaintext:                c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7
+Ciphertext:               de2044f06838d9614814ad18bd05fffe3d518773c3f84d945a5e228543c5e453600ef80aa45772987a09b8eba830f952d3c324303769beea57198eeb1794e9ca
+Reciphers for ciphertext: 0
+Decipheredtext:           c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 57
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            393939393939393939393939393939393939393939393939
+IV:                       c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6
+Plaintext:                c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6
+Ciphertext:               29ca0dffe00bf8054829a4b5275fbbe366a59b6654b7095e19c21750dc389b77d60f6ba6e575cf7178827d7b1fd1df6a1a72942a8a76553cb203acdc1b1accca
+Reciphers for ciphertext: 0
+Decipheredtext:           c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 58
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a
+IV:                       c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5
+Plaintext:                c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5
+Ciphertext:               8f115eb4eba23662bf9fec9c78b35098ba1e5e0dc334f3db54abffa6bd82b02c42191667561efea7e94168fb04c84277466e0922b2cca0ad677b7a53888dde53
+Reciphers for ciphertext: 0
+Decipheredtext:           c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 59
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b
+IV:                       c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4
+Plaintext:                c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4
+Ciphertext:               4cc6b9857212eaec802244ed19649c245f0edc39f97458ffc48f3caac148397024da63e895e3e7866d8bd2aa7e0b1b0399508d296654ea54bba664e3865ed078
+Reciphers for ciphertext: 0
+Decipheredtext:           c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 60
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c
+IV:                       c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3
+Plaintext:                c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3
+Ciphertext:               4ef6338b66ba058626333a708269cf925e73b255f03810221e3351d6e944d36ca8849859ee543498e870db123ab490c5f2b758316c256b2f58e87d52e6facbcb
+Reciphers for ciphertext: 0
+Decipheredtext:           c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3c3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 61
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d3d
+IV:                       c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2
+Plaintext:                c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2
+Ciphertext:               584efe29ba69df9132e7f6ae734752a8fbf064fb1884b2675a100165eafb85a829c0276148b7b9b6e20cd29fc9f70615b9fedb05257bae512f8e9f1ec44eaf8d
+Reciphers for ciphertext: 0
+Decipheredtext:           c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2c2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 62
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e3e
+IV:                       c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1
+Plaintext:                c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1
+Ciphertext:               608468da3b9a92888a18d9b0820d7632400a65db2a9d1d4a442fa58143ac12b93cbe513d8a29bc1ac132b768ca4d34ebcd6955b71bcb7f7e162dfa402fb46a9a
+Reciphers for ciphertext: 0
+Decipheredtext:           c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1c1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 63
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f3f
+IV:                       c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0
+Plaintext:                c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0
+Ciphertext:               ffe957b66da802702b3ef9a5bee65dfd67781f1bdf45d57511d8e4ffce11bb3ca6f9c1c65082c4712f71bf0d89f2b274ed1c7339e57768796562ec0f2d06ba8d
+Reciphers for ciphertext: 0
+Decipheredtext:           c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0c0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 64
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            404040404040404040404040404040404040404040404040
+IV:                       bfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbf
+Plaintext:                bfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbf
+Ciphertext:               3f6dd61c9603647eff34aedf127575296063b17261a6d7a1b2728bb0e63625edd8a82a53eafa46529124d6b6116ef23054909961ba88700d22c520069db0e0be
+Reciphers for ciphertext: 0
+Decipheredtext:           bfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbfbf
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 65
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            414141414141414141414141414141414141414141414141
+IV:                       bebebebebebebebebebebebebebebebe
+Plaintext:                bebebebebebebebebebebebebebebebebe
+Ciphertext:               400bec82451830a615ab6dac67037c853382267191f8d6c16479378a89f2aff725d63437bec2627742b9c232857724c02a7d3e00283b690b403de12472193151
+Reciphers for ciphertext: 0
+Decipheredtext:           bebebebebebebebebebebebebebebebebe
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 66
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            424242424242424242424242424242424242424242424242
+IV:                       bdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbd
+Plaintext:                bdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbd
+Ciphertext:               75369be1353ba9cb07587b238726369373a3d7720d231c7d309d68a21041e7ce2434dc30bf6b9882b17f4cbea84b8548435c0c48bd5533e975c8d1d6ad81e35f
+Reciphers for ciphertext: 0
+Decipheredtext:           bdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbdbd
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 67
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            434343434343434343434343434343434343434343434343
+IV:                       bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+Plaintext:                bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+Ciphertext:               51dc7355a43d034bfcf2259331752f1c1eed7a9bdaad0246f941bf7639d87053ffd195c08668b48502f26ca7d3dff6f86c23fdb60842e7ee6d71656dbe4c9e62
+Reciphers for ciphertext: 0
+Decipheredtext:           bcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbcbc
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 68
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            444444444444444444444444444444444444444444444444
+IV:                       bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Plaintext:                bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+Ciphertext:               3e9c5269c60762ae5e435239055984483617daa233010baaf1f8ce86152e2b30a2239bb0aecb653dca3ec277df0f5479d7f2b74e0477b1e677216a379598d2c9
+Reciphers for ciphertext: 0
+Decipheredtext:           bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 69
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            454545454545454545454545454545454545454545454545
+IV:                       babababababababababababababababa
+Plaintext:                bababababababababababababababababa
+Ciphertext:               a7e1fc1bc9c1219b75db4a9edfedc8a41164871915cafe71ce1a75c2c80ee068351d2f350866706b6af9fdb3e4301c485fdd6eda69dbabfe7b7f708281e27ee7
+Reciphers for ciphertext: 0
+Decipheredtext:           bababababababababababababababababa
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 70
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            464646464646464646464646464646464646464646464646
+IV:                       b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9
+Plaintext:                b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9
+Ciphertext:               335dc087d3e4d0e9d626aaacf188875c8bf50364eb3160b8673677fb7c91d8db1b2dd0343010a23c13c5d4ab8f83b016eee9691ea564b8850dd80f2df8fd2c3f
+Reciphers for ciphertext: 0
+Decipheredtext:           b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 71
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            474747474747474747474747474747474747474747474747
+IV:                       b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8
+Plaintext:                b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8
+Ciphertext:               769f5f19d9265607c9a88921a5ac5cb9b896eef93eb2d0658d97b6d57497540354a4062ea7fc625e1bca644ad77f6495979f2cc64882e399c795d692f5d67ecb
+Reciphers for ciphertext: 0
+Decipheredtext:           b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 72
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            484848484848484848484848484848484848484848484848
+IV:                       b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7
+Plaintext:                b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7
+Ciphertext:               f757dfdda42f5c73490f5fa9a75218dcf1f0d84bd09aaad0ca44f523d176ca6e6a375f2bbfb7fb60f9262a76b351212db21b4810bacda1b266236e7d8f09b71a
+Reciphers for ciphertext: 0
+Decipheredtext:           b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 73
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            494949494949494949494949494949494949494949494949
+IV:                       b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6
+Plaintext:                b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6
+Ciphertext:               1f96994352f67fe8250cceb718f16ef401d4580312d0cc259c90d39d5f8a5a527c1b763673cf8903b2312aab2226559a72f3b4e1e8848d459ecaee8ad22f0171
+Reciphers for ciphertext: 0
+Decipheredtext:           b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 74
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a
+IV:                       b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5
+Plaintext:                b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5
+Ciphertext:               c735fb0a441821f1d40acb7b3bc531cb3db7bf84f672e2116ead659fb6877ca2b24256b16bc10626669897f7846fae14526d109f04cdd1ba718491147e6b4915
+Reciphers for ciphertext: 0
+Decipheredtext:           b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 75
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b
+IV:                       b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4
+Plaintext:                b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4
+Ciphertext:               06bbae4a6ee061fde77ef81c8db62ac4648f52dae4cbb2a53f357fb86cb663488757f222226dfe374541cbdaee84c235e716791c0284e716c2918c902f282535
+Reciphers for ciphertext: 0
+Decipheredtext:           b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4b4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 76
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c
+IV:                       b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3
+Plaintext:                b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3
+Ciphertext:               4458b33dc944e673576de76b0816e45b3307254631f4a5bf820cec012373ec91976e83ee37be5afe60abc78f040b7e349de305e4b23f8c3d3554befb2c6d3bf7
+Reciphers for ciphertext: 0
+Decipheredtext:           b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 77
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d4d
+IV:                       b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2
+Plaintext:                b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2
+Ciphertext:               f4e7c68b02f0f529d17e4074fa18ef7d54bb1acd636c0de4aeb43f52354c3d55eb4d6be26744c46757568c4af33eb883816398f197e6fe0c24ebdc920e5b0c56
+Reciphers for ciphertext: 0
+Decipheredtext:           b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2b2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 78
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e4e
+IV:                       b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1
+Plaintext:                b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1
+Ciphertext:               1a5de775083f3fc74dfeb8e8381156ee16c894866d0b91c4becf4c31f1cd21f34dee50335a01a5426dbe7c1754c178c87b8efc1b6bb2a93a7adee68b0f6e5d7b
+Reciphers for ciphertext: 0
+Decipheredtext:           b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 79
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f4f
+IV:                       b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0
+Plaintext:                b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0
+Ciphertext:               688bdb8d2141396d9e8c70b2e26aec6307e053ce686ea0e4b306d66da8b3f2651e2f2859d94f62c88be3abc3c1dd21d478b4d476faeda1099fb223fe29dd8969
+Reciphers for ciphertext: 0
+Decipheredtext:           b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0b0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 80
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            505050505050505050505050505050505050505050505050
+IV:                       afafafafafafafafafafafafafafafaf
+Plaintext:                afafafafafafafafafafafafafafafafaf
+Ciphertext:               8a9dd832ab4d2735f8123e04ca54d0dd793888b19ba0e0b191949334005d7062d609f7854b1970e586d87683b3b625e08c25c67dfcf08866b2691d510440f883
+Reciphers for ciphertext: 0
+Decipheredtext:           afafafafafafafafafafafafafafafafaf
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 81
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            515151515151515151515151515151515151515151515151
+IV:                       aeaeaeaeaeaeaeaeaeaeaeaeaeaeaeae
+Plaintext:                aeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeae
+Ciphertext:               7269984f3c2c10dc2a0ba51a5aa9244bf793dbf5f1ca54482ad3e1f2721a4a4dfe920a8fcceed3f395e39071cb27ce84e9a84c9a3b4aa296865bf2b0db6fdd81
+Reciphers for ciphertext: 0
+Decipheredtext:           aeaeaeaeaeaeaeaeaeaeaeaeaeaeaeaeae
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 82
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            525252525252525252525252525252525252525252525252
+IV:                       adadadadadadadadadadadadadadadad
+Plaintext:                adadadadadadadadadadadadadadadadad
+Ciphertext:               aa521b3254d278b8b09d3656bfb35903f2e7b9784acaf1f18ff3a04a1e648be4ef6d2325a405dd76c8b8b06f1ae51adbb94989060f1d4cf896bf8c931e78c21b
+Reciphers for ciphertext: 0
+Decipheredtext:           adadadadadadadadadadadadadadadadad
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 83
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            535353535353535353535353535353535353535353535353
+IV:                       acacacacacacacacacacacacacacacac
+Plaintext:                acacacacacacacacacacacacacacacacac
+Ciphertext:               6b95be5a3a1d384278a9603182bd0529ac2054796ba920f230c47d6898654ae802f9ce697e354407be3c9d3cdccfae5020894078f8359a2cb51b09589ef0d083
+Reciphers for ciphertext: 0
+Decipheredtext:           acacacacacacacacacacacacacacacacac
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 84
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            545454545454545454545454545454545454545454545454
+IV:                       abababababababababababababababab
+Plaintext:                ababababababababababababababababab
+Ciphertext:               1a0d2187af1959dfa7e8272fe7993a17d2c48cb43045838263017cd06e3028535da56465c6ddde147668df69470e175a8389a4faac2c0ea3e458260bf1a5d230
+Reciphers for ciphertext: 0
+Decipheredtext:           ababababababababababababababababab
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 85
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            555555555555555555555555555555555555555555555555
+IV:                       aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Plaintext:                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+Ciphertext:               04e92722517ef014b71504af825faafec2f7d7e3476634001ab141503c129420eea5fd79780317a49ca84c9a194d28790b8418ce82c2f8ab661bd3c04bc91946
+Reciphers for ciphertext: 0
+Decipheredtext:           aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 86
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            565656565656565656565656565656565656565656565656
+IV:                       a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9
+Plaintext:                a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9
+Ciphertext:               8629ae92f469205faae0331ea76c5912a815090e0f8138a8f93c662d8fdc6acf66076c42e369528e5f2f4a3c9651c08ca2f00af8a158c1c47f32343aa0026d89
+Reciphers for ciphertext: 0
+Decipheredtext:           a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 87
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            575757575757575757575757575757575757575757575757
+IV:                       a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8
+Plaintext:                a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8
+Ciphertext:               ced4a940dc9d60a4492191efc687929371d487662649cf3698fa10b768aa26669803714610ef04437f51ed0d2b3e012d9e52a23fa06d2f7c06ed13c1aa38f98c
+Reciphers for ciphertext: 0
+Decipheredtext:           a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 88
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            585858585858585858585858585858585858585858585858
+IV:                       a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7
+Plaintext:                a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7
+Ciphertext:               5f80736ded71f8f923d4a63f5a8aca1a6fd4d31f7680d56edcba5bdfe1ce1fa41b23fcbb497c976ff7cde9abec0fd7ca033ae68d7d5120e49bd1129a56ab2a83
+Reciphers for ciphertext: 0
+Decipheredtext:           a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 89
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            595959595959595959595959595959595959595959595959
+IV:                       a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6
+Plaintext:                a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6
+Ciphertext:               ed03d9befff3511ca3c2326b4cb197a0d32e4904699fa03f8a34140ebec08d6483e7af0c08e8d63ca032d735112a86e4b62ea965c92a0f90e428042a5d749d1f
+Reciphers for ciphertext: 0
+Decipheredtext:           a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 90
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a
+IV:                       a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+Plaintext:                a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+Ciphertext:               3e2c9c3269169cb3e148e403796a01983aa74ea6e63041b81712c65f1650ae1afaef3e811112e2fd31882945fe0951e296e42f07231b54f49da4e23f300d0f84
+Reciphers for ciphertext: 0
+Decipheredtext:           a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5a5
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 91
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b5b
+IV:                       a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4
+Plaintext:                a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4
+Ciphertext:               028d5ccf0d38bb39a725ba46c416cdd26afeee3d8342ee2d54a6daf22cf7269f12c9c24397f0389c5e1c3d436324acc121e768f7b40aa0f090631cab6d348429
+Reciphers for ciphertext: 0
+Decipheredtext:           a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4a4
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 92
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c5c
+IV:                       a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3
+Plaintext:                a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3
+Ciphertext:               da97f69222a59344672b843c49e46ff4365f2c41615a912f020e3b53dc3390e1021b0fb9922fb34ea28ba906398a989e6dd5033dde5035c28e338277453160b1
+Reciphers for ciphertext: 0
+Decipheredtext:           a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3a3
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 93
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d
+IV:                       a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2
+Plaintext:                a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2
+Ciphertext:               f91b77c46b7cec4068dd070a77772aad8b557ffa5ca102bed79b8ef8e97a70eac9b15828205c0531a0e2b06ec12c5e02674cca7215001d31cae8cee5ee407b75
+Reciphers for ciphertext: 0
+Decipheredtext:           a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2a2
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 94
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e5e
+IV:                       a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1
+Plaintext:                a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1
+Ciphertext:               c021e0fd51e573329547efbb30c86f165118fc5e2a08ae41f0e0eed396a6f759e858fc3968be1bd48946d39f13d69da774d53e5b5243e23d494d67de87aff9e9
+Reciphers for ciphertext: 0
+Decipheredtext:           a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1a1
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 95
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f
+IV:                       a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0
+Plaintext:                a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0
+Ciphertext:               8dbea6827507b4b3ca4b8d28e81b7dc98cbc79b7cccdd38f97ca9b747a4dfab8e232aeba2861dcd3ab706d3728013c611175c3aec4528198c98a029d1c08e3a1
+Reciphers for ciphertext: 0
+Decipheredtext:           a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0a0
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 96
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            606060606060606060606060606060606060606060606060
+IV:                       9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f
+Plaintext:                9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f
+Ciphertext:               03f4e59e6c1084f4a02565a1587a931cf466618a5dd11e01c0321bc6a7f6b5067174a4db8a7ea5b03bd85448cb73cc60b7b3ca9815add5e9345edc94453361b1
+Reciphers for ciphertext: 0
+Decipheredtext:           9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f9f
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 97
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            616161616161616161616161616161616161616161616161
+IV:                       9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e
+Plaintext:                9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e
+Ciphertext:               aac67d586e32ff2f76fcabb13ed132fdf99959db44e97d3ca438f1cdadb2feed07002f05faecd9301a1d5459a8463cad329b3076fff610f66c8d0b8b804682fd
+Reciphers for ciphertext: 0
+Decipheredtext:           9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e9e
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 98
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            626262626262626262626262626262626262626262626262
+IV:                       9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d
+Plaintext:                9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d
+Ciphertext:               5464588e423977130095c1b9196a9572f8ed1019d900360a73997f75c35278be42f9db2a8e7014c586145552b5b3faf547561236a08f9be273975ae4f9257292
+Reciphers for ciphertext: 0
+Decipheredtext:           9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d9d
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 99
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            636363636363636363636363636363636363636363636363
+IV:                       9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c
+Plaintext:                9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c
+Ciphertext:               d1f95efabb8e9e9b16e69eac55e9ef8aa28d8bbce154346ab71e49e6481dd439b400a56f8ec6c0460224244d90b7ad5bf95dacdaa818389fb5f1a8a0cd598526
+Reciphers for ciphertext: 0
+Decipheredtext:           9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c9c
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 100
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            646464646464646464646464646464646464646464646464
+IV:                       9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b
+Plaintext:                9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b
+Ciphertext:               d0567ecd09cfad28b9eaaf909ba71e42ad6b83442b4b3c5908d6903c59e185953310851bdcf986e80140aba315350c929f24fb9c0feb55bb265cf20a5598dbaa
+Reciphers for ciphertext: 0
+Decipheredtext:           9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b9b
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 101
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            656565656565656565656565656565656565656565656565
+IV:                       9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a
+Plaintext:                9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a
+Ciphertext:               07a5a8cccc7ed9ee725809fa9540fd91fb3f37c2d0abafa8f9bda73d1e12734b3cb6e48b309df4d52b8c779d49a21354e601ec7b5862b475086fc4d0d1e307f8
+Reciphers for ciphertext: 0
+Decipheredtext:           9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a9a
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 102
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            666666666666666666666666666666666666666666666666
+IV:                       99999999999999999999999999999999
+Plaintext:                9999999999999999999999999999999999
+Ciphertext:               f909ee2309e9a7d288539c0175c6350791eb0ecb0a7565f9bb88110ba2f374d27065aefb6ce1b42439b8c6fdc5118a807d62db95eb41ab28b89a242f4eebc801
+Reciphers for ciphertext: 0
+Decipheredtext:           9999999999999999999999999999999999
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 103
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            676767676767676767676767676767676767676767676767
+IV:                       98989898989898989898989898989898
+Plaintext:                9898989898989898989898989898989898
+Ciphertext:               ca4dd18b799dd7f07e64dda2a18222ab122f7c620a99b0074b4712cabfee3e26847e98b3334011829d50895dda9eb19efe70cedda9ccf85b4583bfca0ca8d94d
+Reciphers for ciphertext: 0
+Decipheredtext:           9898989898989898989898989898989898
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 104
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            686868686868686868686868686868686868686868686868
+IV:                       97979797979797979797979797979797
+Plaintext:                9797979797979797979797979797979797
+Ciphertext:               d03f5ce11a98e1746335fddf8c3c729c27432514d3bf5cad40ea43af321f17887be28ddd755bdce9788be2da7001b34ba9c2aebc27c0eb119bbcf842794783b2
+Reciphers for ciphertext: 0
+Decipheredtext:           9797979797979797979797979797979797
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 105
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            696969696969696969696969696969696969696969696969
+IV:                       96969696969696969696969696969696
+Plaintext:                9696969696969696969696969696969696
+Ciphertext:               6fbd9f84c2c9ec32401d595375810fbfbe8f315f26195baeb9e8c8b4baac8e4ca6791bcf3bd363d481bf6b5094dd054b6e4283c50c4ae0b230e145cf79686cc3
+Reciphers for ciphertext: 0
+Decipheredtext:           9696969696969696969696969696969696
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 106
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a6a
+IV:                       95959595959595959595959595959595
+Plaintext:                9595959595959595959595959595959595
+Ciphertext:               786bef3b6e1a2e7d45e002af129f2c9983b0a537b7c9a4748eaaf26af73afd38cb5d313411dae2d9284e407260dc3b918ca42038a79bf2e55ca07795a237215a
+Reciphers for ciphertext: 0
+Decipheredtext:           9595959595959595959595959595959595
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 107
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b6b
+IV:                       94949494949494949494949494949494
+Plaintext:                9494949494949494949494949494949494
+Ciphertext:               85fe515a3ec5b9339e2d194cd9eaa67659cfd151ed978dabb8a806ee659ed860a8dc317f1d8336ce93c8575019f2a482fa4fbebd8018082a546b32d8fa8c9700
+Reciphers for ciphertext: 0
+Decipheredtext:           9494949494949494949494949494949494
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 108
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c6c
+IV:                       93939393939393939393939393939393
+Plaintext:                9393939393939393939393939393939393
+Ciphertext:               0cabd63bbbb6ec603f2600398567b59356136ced5ac314bcd46a5350379dbfa6e72a350e0373fc61e732eecb1ecfa54af4764f3bf8fdefa9334a393cfaaa3ad3
+Reciphers for ciphertext: 0
+Decipheredtext:           9393939393939393939393939393939393
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 109
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d6d
+IV:                       92929292929292929292929292929292
+Plaintext:                9292929292929292929292929292929292
+Ciphertext:               7f41ca410f3330be126c31129932acdb586edfb4c0c6203f69615c71fb6cbfd9081e63176b85211c3090ae0d1bac286541c15cfe702b1c17e8fcea0c6faf0b86
+Reciphers for ciphertext: 0
+Decipheredtext:           9292929292929292929292929292929292
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 110
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e
+IV:                       91919191919191919191919191919191
+Plaintext:                9191919191919191919191919191919191
+Ciphertext:               b785abd57e0f9a9692672deaaa5311641422a4ff1945880fc3dde5af5c3dabdb2bf827830079b359e2fcac0e791b4804eb1f1a07192c54db4e96eb4dcee38ee9
+Reciphers for ciphertext: 0
+Decipheredtext:           9191919191919191919191919191919191
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 111
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f6f
+IV:                       90909090909090909090909090909090
+Plaintext:                9090909090909090909090909090909090
+Ciphertext:               6e866d2eababdba2f4aa047d30f901c1fcd469fe56f558c4da7945ef24f6702b21a4189673224537006a2cf2adb4ffe4f110e12cca1683e90bb444f861a588ba
+Reciphers for ciphertext: 0
+Decipheredtext:           9090909090909090909090909090909090
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 112
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            707070707070707070707070707070707070707070707070
+IV:                       8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f
+Plaintext:                8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f
+Ciphertext:               c7045684f672e3f8590d825b2ccbc756817e2d2b5db058cce7d6f7b86ab714ad2b3d865e34d0b1cd9d54bb5dd6f6456c41cf968988faa1bba3e58024d516477e
+Reciphers for ciphertext: 0
+Decipheredtext:           8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f8f
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 113
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            717171717171717171717171717171717171717171717171
+IV:                       8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e
+Plaintext:                8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e
+Ciphertext:               4455f37c1515a8e00855f6b6fb3cbd660954e1c23c4893db101e5b2a97ba2d69bc0dcde24294bdca3ca21925ce179a9604d1df9a3a70efe90d5b49344c26f4fc
+Reciphers for ciphertext: 0
+Decipheredtext:           8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e8e
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 114
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            727272727272727272727272727272727272727272727272
+IV:                       8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d
+Plaintext:                8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d
+Ciphertext:               0e77167682b8f5364832bc27f98251a024523e8352b23cc74413db59a575530dfb57187cd04a3d9b8c66e05a5d93b97f6abc362a5880047f6605fc6816d49a10
+Reciphers for ciphertext: 0
+Decipheredtext:           8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d8d
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 115
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            737373737373737373737373737373737373737373737373
+IV:                       8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c
+Plaintext:                8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c
+Ciphertext:               33a3f77b5381646d84bde3cf9a23a6e2db21816bc5894bd73f0183a2a1a1eaa795779d946198fce708ae08cb3adc912d003b0377c89fb6251f4aa8c8b00b29c9
+Reciphers for ciphertext: 0
+Decipheredtext:           8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c8c
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 116
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            747474747474747474747474747474747474747474747474
+IV:                       8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b
+Plaintext:                8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b
+Ciphertext:               d57146621293bcadfae315f59a87396db3974fef9c393107ddfde8399ad4d053b575f2947b87a357a404af9d7e27cfbacca8dd875fdf70232777f59f045dc251
+Reciphers for ciphertext: 0
+Decipheredtext:           8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b8b
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 117
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            757575757575757575757575757575757575757575757575
+IV:                       8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a
+Plaintext:                8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a
+Ciphertext:               3a64d2fef22eeb29c6612fd40b90a0f514a512f0109e39a759f6bd7b9c2fb3f0261d41b60139234768fcb0474cd586e40bdfe9d7b028b63715461f23fb8bacfb
+Reciphers for ciphertext: 0
+Decipheredtext:           8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a8a
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 118
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            767676767676767676767676767676767676767676767676
+IV:                       89898989898989898989898989898989
+Plaintext:                8989898989898989898989898989898989
+Ciphertext:               e3166a4d36716c62af81e776f1934223cbc35fbda1b6b77970dff324f925269c09cc18a55691aad931feab6afcea9d530c5b507846eb76be79b4aa9bd0ed57ef
+Reciphers for ciphertext: 0
+Decipheredtext:           8989898989898989898989898989898989
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 119
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            777777777777777777777777777777777777777777777777
+IV:                       88888888888888888888888888888888
+Plaintext:                8888888888888888888888888888888888
+Ciphertext:               0fb24bdecd8e2c5bd8ddd46918893f3022d3a8da9a91e4f9c5ddb09df613a2cbea6bc4729c2b1381ab09d70699dc4471169394fc853221ec44ff45e7845f65c6
+Reciphers for ciphertext: 0
+Decipheredtext:           8888888888888888888888888888888888
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 120
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            787878787878787878787878787878787878787878787878
+IV:                       87878787878787878787878787878787
+Plaintext:                8787878787878787878787878787878787
+Ciphertext:               8564befc118978b5cb4e916c32c0e519d82f133907adffc1b7bca669d32f843d86a165a310207a44782a112409f3ddc7ea1ed02ace7d0bb3ec10447596e6792a
+Reciphers for ciphertext: 0
+Decipheredtext:           8787878787878787878787878787878787
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 121
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            797979797979797979797979797979797979797979797979
+IV:                       86868686868686868686868686868686
+Plaintext:                8686868686868686868686868686868686
+Ciphertext:               610a3c50e32e7a25951068999933c13c6e8b726d4b06f28a53f91fe2cdaf337c6bcd0421d821ec2eeaebfab3cbef3b7858a3af313f8f8f7e8fb6ad5a865e6e37
+Reciphers for ciphertext: 0
+Decipheredtext:           8686868686868686868686868686868686
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 122
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a7a
+IV:                       85858585858585858585858585858585
+Plaintext:                8585858585858585858585858585858585
+Ciphertext:               5cd4d8eaa24ffd221de7ed3f19a00d341dfe97cfa2c7e7c32dbb1816dbccb3ab87caa23afc23e15405282d32964d69ec628f9a950eaeb8a0ee8ac6a002b92abd
+Reciphers for ciphertext: 0
+Decipheredtext:           8585858585858585858585858585858585
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 123
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b7b
+IV:                       84848484848484848484848484848484
+Plaintext:                8484848484848484848484848484848484
+Ciphertext:               ea4955d461ca921f60414d63bf1f347b817855619beb63c27fc8358cc16446afe0c23ff5c334f11915da78281b6dbd5a218f4a81cc69a93d0cfee987fc4a9783
+Reciphers for ciphertext: 0
+Decipheredtext:           8484848484848484848484848484848484
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 124
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c7c
+IV:                       83838383838383838383838383838383
+Plaintext:                8383838383838383838383838383838383
+Ciphertext:               4f27d28eb2bbd908f3db2603d6293592408e20284666a68f797b6410cef3c1b8284a125f8d3f8d99679ace2be765d53d8d7ddaa282bbfc433a31225eb302ddf2
+Reciphers for ciphertext: 0
+Decipheredtext:           8383838383838383838383838383838383
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 125
+Crypto pad: 2
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d7d
+IV:                       82828282828282828282828282828282
+Plaintext:                8282828282828282828282828282828282
+Ciphertext:               ddbe303f78cf011e76e52ea48663c0ce43ee03237adbf37af89a80ab2be02bc50534bf4984d3b7d2ecd9ac0bb41a199b1b4f85c150a99f59e206748eaa23d1a0
+Reciphers for ciphertext: 0
+Decipheredtext:           8282828282828282828282828282828282
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 126
+Crypto pad: 0
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e7e
+IV:                       81818181818181818181818181818181
+Plaintext:                8181818181818181818181818181818181
+Ciphertext:               c81150d53e98753a0c9cc646c757b5e5c5187335ebfa8c896dbcbac96554d6b5c8792d580a223c3583db33cafe8530b99e34ccd2eb8192ee5a3afd625f5dcde5
+Reciphers for ciphertext: 0
+Decipheredtext:           8181818181818181818181818181818181
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+Test: 127
+Crypto pad: 1
+Symmetric key bit length: 192
+IV bit length:            128
+Plaintext bit length:     136
+Symmetric key:            7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f
+IV:                       80808080808080808080808080808080
+Plaintext:                8080808080808080808080808080808080
+Ciphertext:               eca56c3ca52d965513fbfdbd14196b7bb849cfb24658e857fc4f03a43fb8cb8646c041d4ecd356a099b352ef6011e5f60e20824e78e7bd81b3189adbe7bc1731
+Reciphers for ciphertext: 0
+Decipheredtext:           8080808080808080808080808080808080
+RESULT CIPHER-DECIPHER: -----OK-----
+
+
+ DATA SHA1 (hexadecimal): a8af9862beb3621cea99a4492672091d19c17754
+
